@@ -5,11 +5,6 @@ int max(int a, int b) {
     return (a > b) ? a : b;
 }
 
-// void IndexSize(Node *node, int size){
-//     node->flight_index = new int[size];
-//     node->pos = 0;
-// }
-
 int GetHeight(Node *N) {
     if (N == nullptr)
         return 0;
@@ -180,7 +175,7 @@ int* FindKey(Node *root, std::string key) {
     return nullptr; //se nao encontrar, retorna nulo
 }
 
-void FindAndInsert(Node *root, std::string key, int index){
+Node* FindAndInsert(Node *root, std::string key, int index){
     //funcao para encontrar e inserir um voo
     //se o voo ja existe, insere o indice no vetor de indices
     Node *current = root;
@@ -188,14 +183,14 @@ void FindAndInsert(Node *root, std::string key, int index){
         if (key == current->key){
             current->flight_index[current->pos] = index;
             current->pos++;
-            return;
+            return root;
         }
         if (key < current->key)
             current = current->left;
         else //current >= key
             current = current->right;
     }
-    root = Insert(nullptr, key, index); //as vozes da minha cabeça deram uma surtada aqui
+    return (Insert(nullptr, key, index));
 
 }
 

@@ -29,14 +29,14 @@ double StringToSeconds(string const &time_str){
 
 int main(int argc, char *argv[]){
 
-    int num_flights, num_operations;
+    int num_flights;
     Flight *flights;
 
     //mudar a forma como as arvores sao criadas/iniciadas
     Node *org = nullptr, *dst = nullptr, *prc = nullptr;
     Node *sea = nullptr, *dep = nullptr, *arr = nullptr;
     Node *sto = nullptr, *dur = nullptr;
-    
+
     ifstream file(argv[1]);
 
     if( !file.is_open() ){
@@ -57,46 +57,22 @@ int main(int argc, char *argv[]){
             flights[index].duration = to_string(flights[index].arrival_time_seconds - flights[index].departure_time_seconds); //calcula duração do voo
 
             //insere os dados nas arvores
-            FindAndInsert(org, flights[index].origin, index);
-            FindAndInsert(dst, flights[index].destination, index);
-            FindAndInsert(prc, flights[index].price, index);
-            FindAndInsert(sea, flights[index].seats, index);
-            FindAndInsert(dep, flights[index].departure_time, index);
-            FindAndInsert(arr, flights[index].arrival_time, index);
-            FindAndInsert(sto, flights[index].number_stops, index);
-            FindAndInsert(dur, flights[index].duration, index);
+            org = FindAndInsert(org, flights[index].origin, index);
+            dst = FindAndInsert(dst, flights[index].destination, index);
+            prc = FindAndInsert(prc, flights[index].price, index);
+            sea = FindAndInsert(sea, flights[index].seats, index);
+            dep = FindAndInsert(dep, flights[index].departure_time, index);
+            arr = FindAndInsert(arr, flights[index].arrival_time, index);
+            sto = FindAndInsert(sto, flights[index].number_stops, index);
+            dur = FindAndInsert(dur, flights[index].duration, index);
             
-            cout << flights[index].origin << " " << flights[index].destination << " " << flights[index].price << " " << flights[index].seats << " " << flights[index].departure_time << " " << flights[index].arrival_time << " " << flights[index].number_stops << " " << flights[index].departure_time_seconds << " " << flights[index].arrival_time_seconds << " " << flights[index].duration << endl;
+            //cout << flights[index].origin << " " << flights[index].destination << " " << flights[index].price << " " << flights[index].seats << " " << flights[index].departure_time << " " << flights[index].arrival_time << " " << flights[index].number_stops << " " << flights[index].departure_time_seconds << " " << flights[index].arrival_time_seconds << " " << flights[index].duration << endl;
         }
     } catch (exception &e){
         cout << "Erro ao coletar os dados dos voos!" << endl;
         cerr << e.what() << endl;
         exit(1);
     }
-    
-
-    // //coleta as operações
-    // file >> num_operations;
-    // for(int i = 0; i < num_operations; i++){
-    //     char *ptr;
-    // }
-        /*
-        //inicializa variaveis aleatorias que vao ajudar na leitura do arquivo
-        int numPessoa = 0;
-        string linha, caracteristica;
-        long unsigned int i;
-
-        //lê cada linha do arquivo e separa as caracteristicas de cada pessoa
-        while(getline(arquivo, linha)) {            
-            caracteristica = "";
-            for(i=0 ; i < linha.size() ; i++){
-                if(linha[i] != ',')
-                    caracteristica += linha[i];
-                else
-                    break;
-            }
-            p[numPessoa].nome = caracteristica;
-        */
 
     file.close();
 

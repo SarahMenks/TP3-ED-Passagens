@@ -12,12 +12,8 @@ typedef struct Node
     Node *right;
     int height;
 
-    // Node(int size) : flight_index(new int[size]), left(nullptr), right(nullptr), height(1) {}
-    // ~Node() { delete[] flight_index; }
-
 } Node;
  
-//void IndexSize(Node *node, int size);
 Node *NewNode(std::string key, int index);
 int GetBalance(Node *N);
 int GetHeight(Node *N);
@@ -26,7 +22,7 @@ Node *LeftRotate(Node *x);
 Node *Insert(Node* node, std::string key, int const index);
 Node *DeleteNode(Node* root, std::string key);
 int *FindKey(Node *root, std::string key);
-void FindAndInsert(Node *root, std::string key, int index);
+Node* FindAndInsert(Node *root, std::string key, int index);
 void PostOrder(Node* root);
 
 #endif
