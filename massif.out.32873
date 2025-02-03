@@ -1,0 +1,915 @@
+desc: --time-unit=B
+cmd: bin/tp3.out inputs/input_2.txt
+time_unit: B
+#-----------
+snapshot=0
+#-----------
+time=0
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=1
+#-----------
+time=73736
+mem_heap_B=73728
+mem_heap_extra_B=8
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=2
+#-----------
+time=74224
+mem_heap_B=74200
+mem_heap_extra_B=24
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=3
+#-----------
+time=82424
+mem_heap_B=82392
+mem_heap_extra_B=32
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=4
+#-----------
+time=89432
+mem_heap_B=89326
+mem_heap_extra_B=106
+mem_stacks_B=0
+heap_tree=detailed
+n5: 89326 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 73728 0x490E38E: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33)
+  n1: 73728 0x400571E: call_init.part.0 (dl-init.c:74)
+   n1: 73728 0x4005823: call_init (dl-init.c:120)
+    n1: 73728 0x4005823: _dl_init (dl-init.c:121)
+     n1: 73728 0x401F59F: ??? (in /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+      n1: 73728 0x1: ???
+       n1: 73728 0x1FFF00002E: ???
+        n0: 73728 0x1FFF00003A: ???
+ n1: 8192 0x4981BC3: std::basic_filebuf<char, std::char_traits<char> >::_M_allocate_internal_buffer() (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33)
+  n1: 8192 0x4985F46: std::basic_filebuf<char, std::char_traits<char> >::open(char const*, std::_Ios_Openmode) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33)
+   n1: 8192 0x4986CAC: std::basic_ifstream<char, std::char_traits<char> >::basic_ifstream(char const*, std::_Ios_Openmode) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33)
+    n0: 8192 0x10B763: main (main.cpp:32)
+ n1: 4000 0x10B3A3: Node::Node() (AVL.hpp:6)
+  n1: 4000 0x10A696: NewNode(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:16)
+   n1: 4000 0x10A93C: Insert(Node*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:63)
+    n1: 4000 0x10B1C5: FindAndInsert(Node*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:193)
+     n0: 4000 0x10BBAF: main (main.cpp:52)
+ n0: 2728 0x10B802: main (main.cpp:42)
+ n0: 678 in 3 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=5
+#-----------
+time=97624
+mem_heap_B=97470
+mem_heap_extra_B=154
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=6
+#-----------
+time=101840
+mem_heap_B=101602
+mem_heap_extra_B=238
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=7
+#-----------
+time=106216
+mem_heap_B=105705
+mem_heap_extra_B=271
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=8
+#-----------
+time=110472
+mem_heap_B=109748
+mem_heap_extra_B=244
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=9
+#-----------
+time=118576
+mem_heap_B=117820
+mem_heap_extra_B=276
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=10
+#-----------
+time=122680
+mem_heap_B=121916
+mem_heap_extra_B=284
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=11
+#-----------
+time=126960
+mem_heap_B=126122
+mem_heap_extra_B=358
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=12
+#-----------
+time=131056
+mem_heap_B=130194
+mem_heap_extra_B=382
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=13
+#-----------
+time=135272
+mem_heap_B=134326
+mem_heap_extra_B=466
+mem_stacks_B=0
+heap_tree=detailed
+n6: 134326 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 73728 0x490E38E: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33)
+  n1: 73728 0x400571E: call_init.part.0 (dl-init.c:74)
+   n1: 73728 0x4005823: call_init (dl-init.c:120)
+    n1: 73728 0x4005823: _dl_init (dl-init.c:121)
+     n1: 73728 0x401F59F: ??? (in /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+      n1: 73728 0x1: ???
+       n1: 73728 0x1FFF00002E: ???
+        n0: 73728 0x1FFF00003A: ???
+ n1: 44000 0x10B3A3: Node::Node() (AVL.hpp:6)
+  n1: 44000 0x10A696: NewNode(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:16)
+   n1: 44000 0x10A93C: Insert(Node*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:63)
+    n8: 44000 0x10B1C5: FindAndInsert(Node*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:193)
+     n0: 8000 0x10BC1E: main (main.cpp:53)
+     n0: 8000 0x10BC8D: main (main.cpp:54)
+     n0: 8000 0x10BCFC: main (main.cpp:55)
+     n0: 4000 0x10BBAF: main (main.cpp:52)
+     n0: 4000 0x10BD6E: main (main.cpp:56)
+     n0: 4000 0x10BDE0: main (main.cpp:57)
+     n0: 4000 0x10BE52: main (main.cpp:58)
+     n0: 4000 0x10BEC4: main (main.cpp:59)
+ n1: 8192 0x4981BC3: std::basic_filebuf<char, std::char_traits<char> >::_M_allocate_internal_buffer() (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33)
+  n1: 8192 0x4985F46: std::basic_filebuf<char, std::char_traits<char> >::open(char const*, std::_Ios_Openmode) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33)
+   n1: 8192 0x4986CAC: std::basic_ifstream<char, std::char_traits<char> >::basic_ifstream(char const*, std::_Ios_Openmode) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33)
+    n0: 8192 0x10B763: main (main.cpp:32)
+ n1: 4096 0x4B881A4: _IO_file_doallocate (filedoalloc.c:101)
+  n1: 4096 0x4B98513: _IO_doallocbuf (genops.c:347)
+   n1: 4096 0x4B95F7F: _IO_file_overflow@@GLIBC_2.2.5 (fileops.c:745)
+    n1: 4096 0x4B96A9E: _IO_new_file_xsputn (fileops.c:1244)
+     n1: 4096 0x4B96A9E: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1197)
+      n1: 4096 0x4B89A01: fwrite (iofwrite.c:39)
+       n1: 4096 0x49ADDC3: std::basic_ostream<char, std::char_traits<char> >& std::__ostream_insert<char, std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*, long) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33)
+        n0: 4096 0x10BF10: main (main.cpp:61)
+ n0: 2728 0x10B802: main (main.cpp:42)
+ n0: 1582 in 5 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=14
+#-----------
+time=139648
+mem_heap_B=138429
+mem_heap_extra_B=499
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=15
+#-----------
+time=143904
+mem_heap_B=142472
+mem_heap_extra_B=472
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=16
+#-----------
+time=148096
+mem_heap_B=146606
+mem_heap_extra_B=530
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=17
+#-----------
+time=156288
+mem_heap_B=154750
+mem_heap_extra_B=578
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=18
+#-----------
+time=160504
+mem_heap_B=158882
+mem_heap_extra_B=662
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=19
+#-----------
+time=164880
+mem_heap_B=162985
+mem_heap_extra_B=695
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=20
+#-----------
+time=169136
+mem_heap_B=167028
+mem_heap_extra_B=668
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=21
+#-----------
+time=173328
+mem_heap_B=171162
+mem_heap_extra_B=726
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=22
+#-----------
+time=181520
+mem_heap_B=179306
+mem_heap_extra_B=774
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=23
+#-----------
+time=185736
+mem_heap_B=183438
+mem_heap_extra_B=858
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=24
+#-----------
+time=190112
+mem_heap_B=187541
+mem_heap_extra_B=891
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=25
+#-----------
+time=194368
+mem_heap_B=191584
+mem_heap_extra_B=864
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=26
+#-----------
+time=202656
+mem_heap_B=199790
+mem_heap_extra_B=946
+mem_stacks_B=0
+heap_tree=detailed
+n7: 199790 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 108000 0x10B3A3: Node::Node() (AVL.hpp:6)
+  n1: 108000 0x10A696: NewNode(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:16)
+   n1: 108000 0x10A93C: Insert(Node*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:63)
+    n8: 108000 0x10B1C5: FindAndInsert(Node*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:193)
+     n0: 20000 0x10BC1E: main (main.cpp:53)
+     n0: 16000 0x10BC8D: main (main.cpp:54)
+     n0: 16000 0x10BCFC: main (main.cpp:55)
+     n0: 16000 0x10BD6E: main (main.cpp:56)
+     n0: 16000 0x10BDE0: main (main.cpp:57)
+     n0: 16000 0x10BEC4: main (main.cpp:59)
+     n0: 4000 0x10BBAF: main (main.cpp:52)
+     n0: 4000 0x10BE52: main (main.cpp:58)
+ n1: 73728 0x490E38E: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33)
+  n1: 73728 0x400571E: call_init.part.0 (dl-init.c:74)
+   n1: 73728 0x4005823: call_init (dl-init.c:120)
+    n1: 73728 0x4005823: _dl_init (dl-init.c:121)
+     n1: 73728 0x401F59F: ??? (in /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+      n1: 73728 0x1: ???
+       n1: 73728 0x1FFF00002E: ???
+        n0: 73728 0x1FFF00003A: ???
+ n1: 8192 0x4981BC3: std::basic_filebuf<char, std::char_traits<char> >::_M_allocate_internal_buffer() (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33)
+  n1: 8192 0x4985F46: std::basic_filebuf<char, std::char_traits<char> >::open(char const*, std::_Ios_Openmode) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33)
+   n1: 8192 0x4986CAC: std::basic_ifstream<char, std::char_traits<char> >::basic_ifstream(char const*, std::_Ios_Openmode) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33)
+    n0: 8192 0x10B763: main (main.cpp:32)
+ n1: 4096 0x4B881A4: _IO_file_doallocate (filedoalloc.c:101)
+  n1: 4096 0x4B98513: _IO_doallocbuf (genops.c:347)
+   n1: 4096 0x4B95F7F: _IO_file_overflow@@GLIBC_2.2.5 (fileops.c:745)
+    n1: 4096 0x4B96A9E: _IO_new_file_xsputn (fileops.c:1244)
+     n1: 4096 0x4B96A9E: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1197)
+      n1: 4096 0x4B89A01: fwrite (iofwrite.c:39)
+       n1: 4096 0x49ADDC3: std::basic_ostream<char, std::char_traits<char> >& std::__ostream_insert<char, std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*, long) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33)
+        n0: 4096 0x10BF10: main (main.cpp:61)
+ n0: 2728 0x10B802: main (main.cpp:42)
+ n1: 2016 0x10A66D: NewNode(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:16)
+  n1: 2016 0x10A93C: Insert(Node*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:63)
+   n1: 2016 0x10B1C5: FindAndInsert(Node*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:193)
+    n0: 2016 in 8 places, all below massif's threshold (1.00%)
+ n0: 1030 in 4 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=27
+#-----------
+time=206872
+mem_heap_B=203922
+mem_heap_extra_B=1030
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=28
+#-----------
+time=211248
+mem_heap_B=208025
+mem_heap_extra_B=1063
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=29
+#-----------
+time=215504
+mem_heap_B=212068
+mem_heap_extra_B=1036
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=30
+#-----------
+time=219696
+mem_heap_B=216202
+mem_heap_extra_B=1094
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=31
+#-----------
+time=227800
+mem_heap_B=224274
+mem_heap_extra_B=1126
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=32
+#-----------
+time=231896
+mem_heap_B=228346
+mem_heap_extra_B=1150
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=33
+#-----------
+time=236112
+mem_heap_B=232478
+mem_heap_extra_B=1234
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=34
+#-----------
+time=240488
+mem_heap_B=236581
+mem_heap_extra_B=1267
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=35
+#-----------
+time=244928
+mem_heap_B=240758
+mem_heap_extra_B=1290
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=36
+#-----------
+time=253032
+mem_heap_B=248830
+mem_heap_extra_B=1322
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=37
+#-----------
+time=261224
+mem_heap_B=256974
+mem_heap_extra_B=1370
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=38
+#-----------
+time=265440
+mem_heap_B=261106
+mem_heap_extra_B=1454
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=39
+#-----------
+time=269816
+mem_heap_B=265209
+mem_heap_extra_B=1487
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=40
+#-----------
+time=274072
+mem_heap_B=269252
+mem_heap_extra_B=1460
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=41
+#-----------
+time=282360
+mem_heap_B=277458
+mem_heap_extra_B=1542
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=42
+#-----------
+time=290552
+mem_heap_B=285602
+mem_heap_extra_B=1590
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=43
+#-----------
+time=294648
+mem_heap_B=289674
+mem_heap_extra_B=1614
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=44
+#-----------
+time=298864
+mem_heap_B=293806
+mem_heap_extra_B=1698
+mem_stacks_B=0
+heap_tree=detailed
+n6: 293806 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 200000 0x10B3A3: Node::Node() (AVL.hpp:6)
+  n1: 200000 0x10A696: NewNode(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:16)
+   n1: 200000 0x10A93C: Insert(Node*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:63)
+    n8: 200000 0x10B1C5: FindAndInsert(Node*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:193)
+     n0: 32000 0x10BC1E: main (main.cpp:53)
+     n0: 32000 0x10BC8D: main (main.cpp:54)
+     n0: 32000 0x10BD6E: main (main.cpp:56)
+     n0: 28000 0x10BCFC: main (main.cpp:55)
+     n0: 28000 0x10BDE0: main (main.cpp:57)
+     n0: 28000 0x10BEC4: main (main.cpp:59)
+     n0: 12000 0x10BBAF: main (main.cpp:52)
+     n0: 8000 0x10BE52: main (main.cpp:58)
+ n1: 73728 0x490E38E: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33)
+  n1: 73728 0x400571E: call_init.part.0 (dl-init.c:74)
+   n1: 73728 0x4005823: call_init (dl-init.c:120)
+    n1: 73728 0x4005823: _dl_init (dl-init.c:121)
+     n1: 73728 0x401F59F: ??? (in /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+      n1: 73728 0x1: ???
+       n1: 73728 0x1FFF00002E: ???
+        n0: 73728 0x1FFF00003A: ???
+ n1: 8192 0x4981BC3: std::basic_filebuf<char, std::char_traits<char> >::_M_allocate_internal_buffer() (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33)
+  n1: 8192 0x4985F46: std::basic_filebuf<char, std::char_traits<char> >::open(char const*, std::_Ios_Openmode) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33)
+   n1: 8192 0x4986CAC: std::basic_ifstream<char, std::char_traits<char> >::basic_ifstream(char const*, std::_Ios_Openmode) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33)
+    n0: 8192 0x10B763: main (main.cpp:32)
+ n0: 4190 in 5 places, all below massif's threshold (1.00%)
+ n1: 4096 0x4B881A4: _IO_file_doallocate (filedoalloc.c:101)
+  n1: 4096 0x4B98513: _IO_doallocbuf (genops.c:347)
+   n1: 4096 0x4B95F7F: _IO_file_overflow@@GLIBC_2.2.5 (fileops.c:745)
+    n1: 4096 0x4B96A9E: _IO_new_file_xsputn (fileops.c:1244)
+     n1: 4096 0x4B96A9E: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1197)
+      n1: 4096 0x4B89A01: fwrite (iofwrite.c:39)
+       n1: 4096 0x49ADDC3: std::basic_ostream<char, std::char_traits<char> >& std::__ostream_insert<char, std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*, long) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33)
+        n0: 4096 0x10BF10: main (main.cpp:61)
+ n1: 3600 0x10A66D: NewNode(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:16)
+  n1: 3600 0x10A93C: Insert(Node*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:63)
+   n1: 3600 0x10B1C5: FindAndInsert(Node*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:193)
+    n0: 3600 in 8 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=45
+#-----------
+time=303280
+mem_heap_B=297940
+mem_heap_extra_B=1740
+mem_stacks_B=0
+heap_tree=detailed
+n6: 297940 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 204000 0x10B3A3: Node::Node() (AVL.hpp:6)
+  n1: 204000 0x10A696: NewNode(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:16)
+   n1: 204000 0x10A93C: Insert(Node*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:63)
+    n8: 204000 0x10B1C5: FindAndInsert(Node*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:193)
+     n0: 32000 0x10BC1E: main (main.cpp:53)
+     n0: 32000 0x10BC8D: main (main.cpp:54)
+     n0: 32000 0x10BD6E: main (main.cpp:56)
+     n0: 32000 0x10BDE0: main (main.cpp:57)
+     n0: 28000 0x10BCFC: main (main.cpp:55)
+     n0: 28000 0x10BEC4: main (main.cpp:59)
+     n0: 12000 0x10BBAF: main (main.cpp:52)
+     n0: 8000 0x10BE52: main (main.cpp:58)
+ n1: 73728 0x490E38E: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33)
+  n1: 73728 0x400571E: call_init.part.0 (dl-init.c:74)
+   n1: 73728 0x4005823: call_init (dl-init.c:120)
+    n1: 73728 0x4005823: _dl_init (dl-init.c:121)
+     n1: 73728 0x401F59F: ??? (in /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+      n1: 73728 0x1: ???
+       n1: 73728 0x1FFF00002E: ???
+        n0: 73728 0x1FFF00003A: ???
+ n1: 8192 0x4981BC3: std::basic_filebuf<char, std::char_traits<char> >::_M_allocate_internal_buffer() (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33)
+  n1: 8192 0x4985F46: std::basic_filebuf<char, std::char_traits<char> >::open(char const*, std::_Ios_Openmode) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33)
+   n1: 8192 0x4986CAC: std::basic_ifstream<char, std::char_traits<char> >::basic_ifstream(char const*, std::_Ios_Openmode) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33)
+    n0: 8192 0x10B763: main (main.cpp:32)
+ n0: 4252 in 5 places, all below massif's threshold (1.00%)
+ n1: 4096 0x4B881A4: _IO_file_doallocate (filedoalloc.c:101)
+  n1: 4096 0x4B98513: _IO_doallocbuf (genops.c:347)
+   n1: 4096 0x4B95F7F: _IO_file_overflow@@GLIBC_2.2.5 (fileops.c:745)
+    n1: 4096 0x4B96A9E: _IO_new_file_xsputn (fileops.c:1244)
+     n1: 4096 0x4B96A9E: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1197)
+      n1: 4096 0x4B89A01: fwrite (iofwrite.c:39)
+       n1: 4096 0x49ADDC3: std::basic_ostream<char, std::char_traits<char> >& std::__ostream_insert<char, std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*, long) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33)
+        n0: 4096 0x10BF10: main (main.cpp:61)
+ n1: 3672 0x10A66D: NewNode(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:16)
+  n1: 3672 0x10A93C: Insert(Node*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:63)
+   n1: 3672 0x10B1C5: FindAndInsert(Node*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:193)
+    n0: 3672 in 8 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=46
+#-----------
+time=307496
+mem_heap_B=301952
+mem_heap_extra_B=1704
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=47
+#-----------
+time=315784
+mem_heap_B=310158
+mem_heap_extra_B=1786
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=48
+#-----------
+time=323976
+mem_heap_B=318302
+mem_heap_extra_B=1834
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=49
+#-----------
+time=328192
+mem_heap_B=322434
+mem_heap_extra_B=1918
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=50
+#-----------
+time=328232
+mem_heap_B=322465
+mem_heap_extra_B=1927
+mem_stacks_B=0
+heap_tree=detailed
+n6: 322465 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 228000 0x10B3A3: Node::Node() (AVL.hpp:6)
+  n1: 228000 0x10A696: NewNode(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:16)
+   n1: 228000 0x10A93C: Insert(Node*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:63)
+    n8: 228000 0x10B1C5: FindAndInsert(Node*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:193)
+     n0: 36000 0x10BC1E: main (main.cpp:53)
+     n0: 36000 0x10BC8D: main (main.cpp:54)
+     n0: 36000 0x10BD6E: main (main.cpp:56)
+     n0: 32000 0x10BCFC: main (main.cpp:55)
+     n0: 32000 0x10BDE0: main (main.cpp:57)
+     n0: 32000 0x10BEC4: main (main.cpp:59)
+     n0: 12000 0x10BBAF: main (main.cpp:52)
+     n0: 12000 0x10BE52: main (main.cpp:58)
+ n1: 73728 0x490E38E: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33)
+  n1: 73728 0x400571E: call_init.part.0 (dl-init.c:74)
+   n1: 73728 0x4005823: call_init (dl-init.c:120)
+    n1: 73728 0x4005823: _dl_init (dl-init.c:121)
+     n1: 73728 0x401F59F: ??? (in /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+      n1: 73728 0x1: ???
+       n1: 73728 0x1FFF00002E: ???
+        n0: 73728 0x1FFF00003A: ???
+ n1: 8192 0x4981BC3: std::basic_filebuf<char, std::char_traits<char> >::_M_allocate_internal_buffer() (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33)
+  n1: 8192 0x4985F46: std::basic_filebuf<char, std::char_traits<char> >::open(char const*, std::_Ios_Openmode) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33)
+   n1: 8192 0x4986CAC: std::basic_ifstream<char, std::char_traits<char> >::basic_ifstream(char const*, std::_Ios_Openmode) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33)
+    n0: 8192 0x10B763: main (main.cpp:32)
+ n0: 4345 in 5 places, all below massif's threshold (1.00%)
+ n1: 4104 0x10A66D: NewNode(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:16)
+  n1: 4104 0x10A93C: Insert(Node*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:63)
+   n1: 4104 0x10B1C5: FindAndInsert(Node*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:193)
+    n0: 4104 in 8 places, all below massif's threshold (1.00%)
+ n1: 4096 0x4B881A4: _IO_file_doallocate (filedoalloc.c:101)
+  n1: 4096 0x4B98513: _IO_doallocbuf (genops.c:347)
+   n1: 4096 0x4B95F7F: _IO_file_overflow@@GLIBC_2.2.5 (fileops.c:745)
+    n1: 4096 0x4B96A9E: _IO_new_file_xsputn (fileops.c:1244)
+     n1: 4096 0x4B96A9E: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1197)
+      n1: 4096 0x4B89A01: fwrite (iofwrite.c:39)
+       n1: 4096 0x49ADDC3: std::basic_ostream<char, std::char_traits<char> >& std::__ostream_insert<char, std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*, long) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33)
+        n0: 4096 0x10BF10: main (main.cpp:61)
+#-----------
+snapshot=51
+#-----------
+time=332568
+mem_heap_B=326537
+mem_heap_extra_B=1951
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=52
+#-----------
+time=332608
+mem_heap_B=326568
+mem_heap_extra_B=1960
+mem_stacks_B=0
+heap_tree=detailed
+n6: 326568 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 232000 0x10B3A3: Node::Node() (AVL.hpp:6)
+  n1: 232000 0x10A696: NewNode(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:16)
+   n1: 232000 0x10A93C: Insert(Node*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:63)
+    n8: 232000 0x10B1C5: FindAndInsert(Node*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:193)
+     n0: 36000 0x10BC1E: main (main.cpp:53)
+     n0: 36000 0x10BC8D: main (main.cpp:54)
+     n0: 36000 0x10BD6E: main (main.cpp:56)
+     n0: 36000 0x10BDE0: main (main.cpp:57)
+     n0: 32000 0x10BCFC: main (main.cpp:55)
+     n0: 32000 0x10BEC4: main (main.cpp:59)
+     n0: 12000 0x10BBAF: main (main.cpp:52)
+     n0: 12000 0x10BE52: main (main.cpp:58)
+ n1: 73728 0x490E38E: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33)
+  n1: 73728 0x400571E: call_init.part.0 (dl-init.c:74)
+   n1: 73728 0x4005823: call_init (dl-init.c:120)
+    n1: 73728 0x4005823: _dl_init (dl-init.c:121)
+     n1: 73728 0x401F59F: ??? (in /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+      n1: 73728 0x1: ???
+       n1: 73728 0x1FFF00002E: ???
+        n0: 73728 0x1FFF00003A: ???
+ n1: 8192 0x4981BC3: std::basic_filebuf<char, std::char_traits<char> >::_M_allocate_internal_buffer() (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33)
+  n1: 8192 0x4985F46: std::basic_filebuf<char, std::char_traits<char> >::open(char const*, std::_Ios_Openmode) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33)
+   n1: 8192 0x4986CAC: std::basic_ifstream<char, std::char_traits<char> >::basic_ifstream(char const*, std::_Ios_Openmode) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33)
+    n0: 8192 0x10B763: main (main.cpp:32)
+ n0: 4376 in 5 places, all below massif's threshold (1.00%)
+ n1: 4176 0x10A66D: NewNode(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:16)
+  n1: 4176 0x10A93C: Insert(Node*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:63)
+   n1: 4176 0x10B1C5: FindAndInsert(Node*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:193)
+    n0: 4176 in 8 places, all below massif's threshold (1.00%)
+ n1: 4096 0x4B881A4: _IO_file_doallocate (filedoalloc.c:101)
+  n1: 4096 0x4B98513: _IO_doallocbuf (genops.c:347)
+   n1: 4096 0x4B95F7F: _IO_file_overflow@@GLIBC_2.2.5 (fileops.c:745)
+    n1: 4096 0x4B96A9E: _IO_new_file_xsputn (fileops.c:1244)
+     n1: 4096 0x4B96A9E: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1197)
+      n1: 4096 0x4B89A01: fwrite (iofwrite.c:39)
+       n1: 4096 0x49ADDC3: std::basic_ostream<char, std::char_traits<char> >& std::__ostream_insert<char, std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*, long) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33)
+        n0: 4096 0x10BF10: main (main.cpp:61)
+#-----------
+snapshot=53
+#-----------
+time=336824
+mem_heap_B=330580
+mem_heap_extra_B=1924
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=54
+#-----------
+time=341016
+mem_heap_B=334714
+mem_heap_extra_B=1982
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=55
+#-----------
+time=345112
+mem_heap_B=338786
+mem_heap_extra_B=2006
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=56
+#-----------
+time=349328
+mem_heap_B=342918
+mem_heap_extra_B=2090
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=57
+#-----------
+time=349368
+mem_heap_B=342949
+mem_heap_extra_B=2099
+mem_stacks_B=0
+heap_tree=detailed
+n6: 342949 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 248000 0x10B3A3: Node::Node() (AVL.hpp:6)
+  n1: 248000 0x10A696: NewNode(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:16)
+   n1: 248000 0x10A93C: Insert(Node*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:63)
+    n8: 248000 0x10B1C5: FindAndInsert(Node*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:193)
+     n0: 40000 0x10BC1E: main (main.cpp:53)
+     n0: 40000 0x10BD6E: main (main.cpp:56)
+     n0: 36000 0x10BC8D: main (main.cpp:54)
+     n0: 36000 0x10BCFC: main (main.cpp:55)
+     n0: 36000 0x10BDE0: main (main.cpp:57)
+     n0: 36000 0x10BEC4: main (main.cpp:59)
+     n0: 12000 0x10BBAF: main (main.cpp:52)
+     n0: 12000 0x10BE52: main (main.cpp:58)
+ n1: 73728 0x490E38E: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33)
+  n1: 73728 0x400571E: call_init.part.0 (dl-init.c:74)
+   n1: 73728 0x4005823: call_init (dl-init.c:120)
+    n1: 73728 0x4005823: _dl_init (dl-init.c:121)
+     n1: 73728 0x401F59F: ??? (in /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+      n1: 73728 0x1: ???
+       n1: 73728 0x1FFF00002E: ???
+        n0: 73728 0x1FFF00003A: ???
+ n1: 8192 0x4981BC3: std::basic_filebuf<char, std::char_traits<char> >::_M_allocate_internal_buffer() (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33)
+  n1: 8192 0x4985F46: std::basic_filebuf<char, std::char_traits<char> >::open(char const*, std::_Ios_Openmode) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33)
+   n1: 8192 0x4986CAC: std::basic_ifstream<char, std::char_traits<char> >::basic_ifstream(char const*, std::_Ios_Openmode) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33)
+    n0: 8192 0x10B763: main (main.cpp:32)
+ n0: 4469 in 5 places, all below massif's threshold (1.00%)
+ n1: 4464 0x10A66D: NewNode(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:16)
+  n1: 4464 0x10A93C: Insert(Node*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:63)
+   n1: 4464 0x10B1C5: FindAndInsert(Node*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:193)
+    n0: 4464 in 8 places, all below massif's threshold (1.00%)
+ n1: 4096 0x4B881A4: _IO_file_doallocate (filedoalloc.c:101)
+  n1: 4096 0x4B98513: _IO_doallocbuf (genops.c:347)
+   n1: 4096 0x4B95F7F: _IO_file_overflow@@GLIBC_2.2.5 (fileops.c:745)
+    n1: 4096 0x4B96A9E: _IO_new_file_xsputn (fileops.c:1244)
+     n1: 4096 0x4B96A9E: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1197)
+      n1: 4096 0x4B89A01: fwrite (iofwrite.c:39)
+       n1: 4096 0x49ADDC3: std::basic_ostream<char, std::char_traits<char> >& std::__ostream_insert<char, std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*, long) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33)
+        n0: 4096 0x10BF10: main (main.cpp:61)
+#-----------
+snapshot=58
+#-----------
+time=353704
+mem_heap_B=347021
+mem_heap_extra_B=2123
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=59
+#-----------
+time=353744
+mem_heap_B=347052
+mem_heap_extra_B=2132
+mem_stacks_B=0
+heap_tree=detailed
+n6: 347052 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 252000 0x10B3A3: Node::Node() (AVL.hpp:6)
+  n1: 252000 0x10A696: NewNode(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:16)
+   n1: 252000 0x10A93C: Insert(Node*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:63)
+    n8: 252000 0x10B1C5: FindAndInsert(Node*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:193)
+     n0: 40000 0x10BC1E: main (main.cpp:53)
+     n0: 40000 0x10BD6E: main (main.cpp:56)
+     n0: 40000 0x10BDE0: main (main.cpp:57)
+     n0: 36000 0x10BC8D: main (main.cpp:54)
+     n0: 36000 0x10BCFC: main (main.cpp:55)
+     n0: 36000 0x10BEC4: main (main.cpp:59)
+     n0: 12000 0x10BBAF: main (main.cpp:52)
+     n0: 12000 0x10BE52: main (main.cpp:58)
+ n1: 73728 0x490E38E: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33)
+  n1: 73728 0x400571E: call_init.part.0 (dl-init.c:74)
+   n1: 73728 0x4005823: call_init (dl-init.c:120)
+    n1: 73728 0x4005823: _dl_init (dl-init.c:121)
+     n1: 73728 0x401F59F: ??? (in /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+      n1: 73728 0x1: ???
+       n1: 73728 0x1FFF00002E: ???
+        n0: 73728 0x1FFF00003A: ???
+ n1: 8192 0x4981BC3: std::basic_filebuf<char, std::char_traits<char> >::_M_allocate_internal_buffer() (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33)
+  n1: 8192 0x4985F46: std::basic_filebuf<char, std::char_traits<char> >::open(char const*, std::_Ios_Openmode) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33)
+   n1: 8192 0x4986CAC: std::basic_ifstream<char, std::char_traits<char> >::basic_ifstream(char const*, std::_Ios_Openmode) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33)
+    n0: 8192 0x10B763: main (main.cpp:32)
+ n1: 4536 0x10A66D: NewNode(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:16)
+  n1: 4536 0x10A93C: Insert(Node*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:63)
+   n1: 4536 0x10B1C5: FindAndInsert(Node*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:193)
+    n0: 4536 in 8 places, all below massif's threshold (1.00%)
+ n0: 4500 in 5 places, all below massif's threshold (1.00%)
+ n1: 4096 0x4B881A4: _IO_file_doallocate (filedoalloc.c:101)
+  n1: 4096 0x4B98513: _IO_doallocbuf (genops.c:347)
+   n1: 4096 0x4B95F7F: _IO_file_overflow@@GLIBC_2.2.5 (fileops.c:745)
+    n1: 4096 0x4B96A9E: _IO_new_file_xsputn (fileops.c:1244)
+     n1: 4096 0x4B96A9E: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1197)
+      n1: 4096 0x4B89A01: fwrite (iofwrite.c:39)
+       n1: 4096 0x49ADDC3: std::basic_ostream<char, std::char_traits<char> >& std::__ostream_insert<char, std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*, long) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33)
+        n0: 4096 0x10BF10: main (main.cpp:61)
+#-----------
+snapshot=60
+#-----------
+time=357960
+mem_heap_B=351064
+mem_heap_extra_B=2096
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=61
+#-----------
+time=357960
+mem_heap_B=351064
+mem_heap_extra_B=2096
+mem_stacks_B=0
+heap_tree=peak
+n6: 351064 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 256000 0x10B3A3: Node::Node() (AVL.hpp:6)
+  n1: 256000 0x10A696: NewNode(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:16)
+   n1: 256000 0x10A93C: Insert(Node*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:63)
+    n8: 256000 0x10B1C5: FindAndInsert(Node*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:193)
+     n0: 40000 0x10BC1E: main (main.cpp:53)
+     n0: 40000 0x10BD6E: main (main.cpp:56)
+     n0: 40000 0x10BDE0: main (main.cpp:57)
+     n0: 40000 0x10BEC4: main (main.cpp:59)
+     n0: 36000 0x10BC8D: main (main.cpp:54)
+     n0: 36000 0x10BCFC: main (main.cpp:55)
+     n0: 12000 0x10BBAF: main (main.cpp:52)
+     n0: 12000 0x10BE52: main (main.cpp:58)
+ n1: 73728 0x490E38E: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33)
+  n1: 73728 0x400571E: call_init.part.0 (dl-init.c:74)
+   n1: 73728 0x4005823: call_init (dl-init.c:120)
+    n1: 73728 0x4005823: _dl_init (dl-init.c:121)
+     n1: 73728 0x401F59F: ??? (in /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+      n1: 73728 0x1: ???
+       n1: 73728 0x1FFF00002E: ???
+        n0: 73728 0x1FFF00003A: ???
+ n1: 8192 0x4981BC3: std::basic_filebuf<char, std::char_traits<char> >::_M_allocate_internal_buffer() (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33)
+  n1: 8192 0x4985F46: std::basic_filebuf<char, std::char_traits<char> >::open(char const*, std::_Ios_Openmode) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33)
+   n1: 8192 0x4986CAC: std::basic_ifstream<char, std::char_traits<char> >::basic_ifstream(char const*, std::_Ios_Openmode) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33)
+    n0: 8192 0x10B763: main (main.cpp:32)
+ n1: 4608 0x10A66D: NewNode(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:16)
+  n1: 4608 0x10A93C: Insert(Node*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:63)
+   n1: 4608 0x10B1C5: FindAndInsert(Node*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:193)
+    n0: 4608 in 8 places, all below massif's threshold (1.00%)
+ n0: 4440 in 5 places, all below massif's threshold (1.00%)
+ n1: 4096 0x4B881A4: _IO_file_doallocate (filedoalloc.c:101)
+  n1: 4096 0x4B98513: _IO_doallocbuf (genops.c:347)
+   n1: 4096 0x4B95F7F: _IO_file_overflow@@GLIBC_2.2.5 (fileops.c:745)
+    n1: 4096 0x4B96A9E: _IO_new_file_xsputn (fileops.c:1244)
+     n1: 4096 0x4B96A9E: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1197)
+      n1: 4096 0x4B89A01: fwrite (iofwrite.c:39)
+       n1: 4096 0x49ADDC3: std::basic_ostream<char, std::char_traits<char> >& std::__ostream_insert<char, std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*, long) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33)
+        n0: 4096 0x10BF10: main (main.cpp:61)
+#-----------
+snapshot=62
+#-----------
+time=366160
+mem_heap_B=342872
+mem_heap_extra_B=2088
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=63
+#-----------
+time=366648
+mem_heap_B=342400
+mem_heap_extra_B=2072
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=64
+#-----------
+time=367168
+mem_heap_B=342059
+mem_heap_extra_B=1893
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=65
+#-----------
+time=370336
+mem_heap_B=339052
+mem_heap_extra_B=1732
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=66
+#-----------
+time=370856
+mem_heap_B=338630
+mem_heap_extra_B=1634
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=67
+#-----------
+time=444856
+mem_heap_B=264686
+mem_heap_extra_B=1578
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=68
+#-----------
+time=448960
+mem_heap_B=260590
+mem_heap_extra_B=1570
+mem_stacks_B=0
+heap_tree=empty

@@ -1,0 +1,1826 @@
+desc: --time-unit=B
+cmd: bin/tp3.out inputs/input_10.txt
+time_unit: B
+#-----------
+snapshot=0
+#-----------
+time=0
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=1
+#-----------
+time=73736
+mem_heap_B=73728
+mem_heap_extra_B=8
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=2
+#-----------
+time=104208
+mem_heap_B=104160
+mem_heap_extra_B=48
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=3
+#-----------
+time=146000
+mem_heap_B=145162
+mem_heap_extra_B=358
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=4
+#-----------
+time=183640
+mem_heap_B=181994
+mem_heap_extra_B=686
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=5
+#-----------
+time=208752
+mem_heap_B=206490
+mem_heap_extra_B=822
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=6
+#-----------
+time=263128
+mem_heap_B=259540
+mem_heap_extra_B=1188
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=7
+#-----------
+time=313032
+mem_heap_B=308590
+mem_heap_extra_B=1562
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=8
+#-----------
+time=346456
+mem_heap_B=341290
+mem_heap_extra_B=1806
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=9
+#-----------
+time=384376
+mem_heap_B=378153
+mem_heap_extra_B=2143
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=10
+#-----------
+time=443032
+mem_heap_B=435409
+mem_heap_extra_B=2583
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=11
+#-----------
+time=472360
+mem_heap_B=464037
+mem_heap_extra_B=2803
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=12
+#-----------
+time=510136
+mem_heap_B=500842
+mem_heap_extra_B=3054
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=13
+#-----------
+time=560504
+mem_heap_B=549892
+mem_heap_extra_B=3412
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=14
+#-----------
+time=593928
+mem_heap_B=582592
+mem_heap_extra_B=3656
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=15
+#-----------
+time=648088
+mem_heap_B=635805
+mem_heap_extra_B=4123
+mem_stacks_B=0
+heap_tree=detailed
+n6: 635805 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 516000 0x10B3A3: Node::Node() (AVL.hpp:6)
+  n1: 516000 0x10A696: NewNode(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:16)
+   n1: 516000 0x10A93C: Insert(Node*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:63)
+    n8: 516000 0x10B1C5: FindAndInsert(Node*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:193)
+     n0: 72000 0x10BC1E: main (main.cpp:53)
+     n0: 72000 0x10BC8D: main (main.cpp:54)
+     n0: 72000 0x10BD6E: main (main.cpp:56)
+     n0: 68000 0x10BBAF: main (main.cpp:52)
+     n0: 68000 0x10BCFC: main (main.cpp:55)
+     n0: 68000 0x10BDE0: main (main.cpp:57)
+     n0: 68000 0x10BEC4: main (main.cpp:59)
+     n0: 28000 0x10BE52: main (main.cpp:58)
+ n1: 73728 0x490E38E: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33)
+  n1: 73728 0x400571E: call_init.part.0 (dl-init.c:74)
+   n1: 73728 0x4005823: call_init (dl-init.c:120)
+    n1: 73728 0x4005823: _dl_init (dl-init.c:121)
+     n1: 73728 0x401F59F: ??? (in /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+      n1: 73728 0x1: ???
+       n1: 73728 0x1FFF00002E: ???
+        n0: 73728 0x1FFF00003A: ???
+ n0: 21768 0x10B802: main (main.cpp:42)
+ n1: 9288 0x10A66D: NewNode(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:16)
+  n1: 9288 0x10A93C: Insert(Node*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:63)
+   n1: 9288 0x10B1C5: FindAndInsert(Node*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:193)
+    n0: 9288 in 8 places, all below massif's threshold (1.00%)
+ n1: 8192 0x4981BC3: std::basic_filebuf<char, std::char_traits<char> >::_M_allocate_internal_buffer() (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33)
+  n1: 8192 0x4985F46: std::basic_filebuf<char, std::char_traits<char> >::open(char const*, std::_Ios_Openmode) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33)
+   n1: 8192 0x4986CAC: std::basic_ifstream<char, std::char_traits<char> >::basic_ifstream(char const*, std::_Ios_Openmode) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33)
+    n0: 8192 0x10B763: main (main.cpp:32)
+ n0: 6829 in 5 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=16
+#-----------
+time=706744
+mem_heap_B=693061
+mem_heap_extra_B=4563
+mem_stacks_B=0
+heap_tree=detailed
+n6: 693061 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 572000 0x10B3A3: Node::Node() (AVL.hpp:6)
+  n1: 572000 0x10A696: NewNode(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:16)
+   n1: 572000 0x10A93C: Insert(Node*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:63)
+    n8: 572000 0x10B1C5: FindAndInsert(Node*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:193)
+     n0: 80000 0x10BC1E: main (main.cpp:53)
+     n0: 80000 0x10BC8D: main (main.cpp:54)
+     n0: 80000 0x10BD6E: main (main.cpp:56)
+     n0: 76000 0x10BBAF: main (main.cpp:52)
+     n0: 76000 0x10BCFC: main (main.cpp:55)
+     n0: 76000 0x10BDE0: main (main.cpp:57)
+     n0: 76000 0x10BEC4: main (main.cpp:59)
+     n0: 28000 0x10BE52: main (main.cpp:58)
+ n1: 73728 0x490E38E: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33)
+  n1: 73728 0x400571E: call_init.part.0 (dl-init.c:74)
+   n1: 73728 0x4005823: call_init (dl-init.c:120)
+    n1: 73728 0x4005823: _dl_init (dl-init.c:121)
+     n1: 73728 0x401F59F: ??? (in /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+      n1: 73728 0x1: ???
+       n1: 73728 0x1FFF00002E: ???
+        n0: 73728 0x1FFF00003A: ???
+ n0: 21768 0x10B802: main (main.cpp:42)
+ n1: 10296 0x10A66D: NewNode(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:16)
+  n1: 10296 0x10A93C: Insert(Node*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:63)
+   n1: 10296 0x10B1C5: FindAndInsert(Node*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:193)
+    n0: 10296 in 8 places, all below massif's threshold (1.00%)
+ n1: 8192 0x4981BC3: std::basic_filebuf<char, std::char_traits<char> >::_M_allocate_internal_buffer() (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33)
+  n1: 8192 0x4985F46: std::basic_filebuf<char, std::char_traits<char> >::open(char const*, std::_Ios_Openmode) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33)
+   n1: 8192 0x4986CAC: std::basic_ifstream<char, std::char_traits<char> >::basic_ifstream(char const*, std::_Ios_Openmode) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33)
+    n0: 8192 0x10B763: main (main.cpp:32)
+ n0: 7077 in 5 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=17
+#-----------
+time=744664
+mem_heap_B=729804
+mem_heap_extra_B=4780
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=18
+#-----------
+time=786376
+mem_heap_B=770710
+mem_heap_extra_B=5106
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=19
+#-----------
+time=824056
+mem_heap_B=807573
+mem_heap_extra_B=5443
+mem_stacks_B=0
+heap_tree=detailed
+n6: 807573 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 684000 0x10B3A3: Node::Node() (AVL.hpp:6)
+  n1: 684000 0x10A696: NewNode(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:16)
+   n1: 684000 0x10A93C: Insert(Node*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:63)
+    n8: 684000 0x10B1C5: FindAndInsert(Node*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:193)
+     n0: 96000 0x10BC8D: main (main.cpp:54)
+     n0: 96000 0x10BD6E: main (main.cpp:56)
+     n0: 92000 0x10BBAF: main (main.cpp:52)
+     n0: 92000 0x10BC1E: main (main.cpp:53)
+     n0: 92000 0x10BDE0: main (main.cpp:57)
+     n0: 92000 0x10BEC4: main (main.cpp:59)
+     n0: 88000 0x10BCFC: main (main.cpp:55)
+     n0: 36000 0x10BE52: main (main.cpp:58)
+ n1: 73728 0x490E38E: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33)
+  n1: 73728 0x400571E: call_init.part.0 (dl-init.c:74)
+   n1: 73728 0x4005823: call_init (dl-init.c:120)
+    n1: 73728 0x4005823: _dl_init (dl-init.c:121)
+     n1: 73728 0x401F59F: ??? (in /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+      n1: 73728 0x1: ???
+       n1: 73728 0x1FFF00002E: ???
+        n0: 73728 0x1FFF00003A: ???
+ n0: 21768 0x10B802: main (main.cpp:42)
+ n1: 12312 0x10A66D: NewNode(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:16)
+  n1: 12312 0x10A93C: Insert(Node*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:63)
+   n1: 12312 0x10B1C5: FindAndInsert(Node*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:193)
+    n0: 12312 in 8 places, all below massif's threshold (1.00%)
+ n1: 8192 0x4981BC3: std::basic_filebuf<char, std::char_traits<char> >::_M_allocate_internal_buffer() (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33)
+  n1: 8192 0x4985F46: std::basic_filebuf<char, std::char_traits<char> >::open(char const*, std::_Ios_Openmode) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33)
+   n1: 8192 0x4986CAC: std::basic_ifstream<char, std::char_traits<char> >::basic_ifstream(char const*, std::_Ios_Openmode) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33)
+    n0: 8192 0x10B763: main (main.cpp:32)
+ n0: 7573 in 5 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=20
+#-----------
+time=882712
+mem_heap_B=864829
+mem_heap_extra_B=5883
+mem_stacks_B=0
+heap_tree=detailed
+n5: 864829 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 740000 0x10B3A3: Node::Node() (AVL.hpp:6)
+  n1: 740000 0x10A696: NewNode(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:16)
+   n1: 740000 0x10A93C: Insert(Node*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:63)
+    n8: 740000 0x10B1C5: FindAndInsert(Node*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:193)
+     n0: 104000 0x10BC8D: main (main.cpp:54)
+     n0: 104000 0x10BD6E: main (main.cpp:56)
+     n0: 100000 0x10BBAF: main (main.cpp:52)
+     n0: 100000 0x10BC1E: main (main.cpp:53)
+     n0: 100000 0x10BDE0: main (main.cpp:57)
+     n0: 100000 0x10BEC4: main (main.cpp:59)
+     n0: 92000 0x10BCFC: main (main.cpp:55)
+     n0: 40000 0x10BE52: main (main.cpp:58)
+ n1: 73728 0x490E38E: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33)
+  n1: 73728 0x400571E: call_init.part.0 (dl-init.c:74)
+   n1: 73728 0x4005823: call_init (dl-init.c:120)
+    n1: 73728 0x4005823: _dl_init (dl-init.c:121)
+     n1: 73728 0x401F59F: ??? (in /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+      n1: 73728 0x1: ???
+       n1: 73728 0x1FFF00002E: ???
+        n0: 73728 0x1FFF00003A: ???
+ n0: 21768 0x10B802: main (main.cpp:42)
+ n0: 16013 in 6 places, all below massif's threshold (1.00%)
+ n1: 13320 0x10A66D: NewNode(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:16)
+  n1: 13320 0x10A93C: Insert(Node*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:63)
+   n1: 13320 0x10B1C5: FindAndInsert(Node*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:193)
+    n0: 13320 in 8 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=21
+#-----------
+time=937112
+mem_heap_B=917922
+mem_heap_extra_B=6230
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=22
+#-----------
+time=974792
+mem_heap_B=954785
+mem_heap_extra_B=6567
+mem_stacks_B=0
+heap_tree=detailed
+n5: 954785 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 828000 0x10B3A3: Node::Node() (AVL.hpp:6)
+  n1: 828000 0x10A696: NewNode(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:16)
+   n1: 828000 0x10A93C: Insert(Node*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:63)
+    n8: 828000 0x10B1C5: FindAndInsert(Node*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:193)
+     n0: 116000 0x10BC8D: main (main.cpp:54)
+     n0: 116000 0x10BD6E: main (main.cpp:56)
+     n0: 112000 0x10BBAF: main (main.cpp:52)
+     n0: 112000 0x10BC1E: main (main.cpp:53)
+     n0: 112000 0x10BDE0: main (main.cpp:57)
+     n0: 112000 0x10BEC4: main (main.cpp:59)
+     n0: 104000 0x10BCFC: main (main.cpp:55)
+     n0: 44000 0x10BE52: main (main.cpp:58)
+ n1: 73728 0x490E38E: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33)
+  n1: 73728 0x400571E: call_init.part.0 (dl-init.c:74)
+   n1: 73728 0x4005823: call_init (dl-init.c:120)
+    n1: 73728 0x4005823: _dl_init (dl-init.c:121)
+     n1: 73728 0x401F59F: ??? (in /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+      n1: 73728 0x1: ???
+       n1: 73728 0x1FFF00002E: ???
+        n0: 73728 0x1FFF00003A: ???
+ n0: 21768 0x10B802: main (main.cpp:42)
+ n0: 16385 in 6 places, all below massif's threshold (1.00%)
+ n1: 14904 0x10A66D: NewNode(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:16)
+  n1: 14904 0x10A93C: Insert(Node*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:63)
+   n1: 14904 0x10B1C5: FindAndInsert(Node*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:193)
+    n0: 14904 in 8 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=23
+#-----------
+time=1004120
+mem_heap_B=983413
+mem_heap_extra_B=6787
+mem_stacks_B=0
+heap_tree=detailed
+n5: 983413 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 856000 0x10B3A3: Node::Node() (AVL.hpp:6)
+  n1: 856000 0x10A696: NewNode(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:16)
+   n1: 856000 0x10A93C: Insert(Node*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:63)
+    n8: 856000 0x10B1C5: FindAndInsert(Node*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:193)
+     n0: 120000 0x10BC8D: main (main.cpp:54)
+     n0: 120000 0x10BD6E: main (main.cpp:56)
+     n0: 116000 0x10BBAF: main (main.cpp:52)
+     n0: 116000 0x10BDE0: main (main.cpp:57)
+     n0: 116000 0x10BEC4: main (main.cpp:59)
+     n0: 112000 0x10BC1E: main (main.cpp:53)
+     n0: 108000 0x10BCFC: main (main.cpp:55)
+     n0: 48000 0x10BE52: main (main.cpp:58)
+ n1: 73728 0x490E38E: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33)
+  n1: 73728 0x400571E: call_init.part.0 (dl-init.c:74)
+   n1: 73728 0x4005823: call_init (dl-init.c:120)
+    n1: 73728 0x4005823: _dl_init (dl-init.c:121)
+     n1: 73728 0x401F59F: ??? (in /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+      n1: 73728 0x1: ???
+       n1: 73728 0x1FFF00002E: ???
+        n0: 73728 0x1FFF00003A: ???
+ n0: 21768 0x10B802: main (main.cpp:42)
+ n0: 16509 in 6 places, all below massif's threshold (1.00%)
+ n1: 15408 0x10A66D: NewNode(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:16)
+  n1: 15408 0x10A93C: Insert(Node*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:63)
+   n1: 15408 0x10B1C5: FindAndInsert(Node*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:193)
+    n0: 15408 in 8 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=24
+#-----------
+time=1037544
+mem_heap_B=1016113
+mem_heap_extra_B=7031
+mem_stacks_B=0
+heap_tree=detailed
+n5: 1016113 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 888000 0x10B3A3: Node::Node() (AVL.hpp:6)
+  n1: 888000 0x10A696: NewNode(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:16)
+   n1: 888000 0x10A93C: Insert(Node*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:63)
+    n8: 888000 0x10B1C5: FindAndInsert(Node*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:193)
+     n0: 124000 0x10BC8D: main (main.cpp:54)
+     n0: 124000 0x10BD6E: main (main.cpp:56)
+     n0: 120000 0x10BBAF: main (main.cpp:52)
+     n0: 120000 0x10BDE0: main (main.cpp:57)
+     n0: 120000 0x10BEC4: main (main.cpp:59)
+     n0: 116000 0x10BC1E: main (main.cpp:53)
+     n0: 112000 0x10BCFC: main (main.cpp:55)
+     n0: 52000 0x10BE52: main (main.cpp:58)
+ n1: 73728 0x490E38E: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33)
+  n1: 73728 0x400571E: call_init.part.0 (dl-init.c:74)
+   n1: 73728 0x4005823: call_init (dl-init.c:120)
+    n1: 73728 0x4005823: _dl_init (dl-init.c:121)
+     n1: 73728 0x401F59F: ??? (in /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+      n1: 73728 0x1: ???
+       n1: 73728 0x1FFF00002E: ???
+        n0: 73728 0x1FFF00003A: ???
+ n0: 21768 0x10B802: main (main.cpp:42)
+ n0: 16633 in 6 places, all below massif's threshold (1.00%)
+ n1: 15984 0x10A66D: NewNode(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:16)
+  n1: 15984 0x10A93C: Insert(Node*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:63)
+   n1: 15984 0x10B1C5: FindAndInsert(Node*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:193)
+    n0: 15984 in 8 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=25
+#-----------
+time=1070968
+mem_heap_B=1048813
+mem_heap_extra_B=7275
+mem_stacks_B=0
+heap_tree=detailed
+n5: 1048813 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 920000 0x10B3A3: Node::Node() (AVL.hpp:6)
+  n1: 920000 0x10A696: NewNode(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:16)
+   n1: 920000 0x10A93C: Insert(Node*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:63)
+    n8: 920000 0x10B1C5: FindAndInsert(Node*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:193)
+     n0: 128000 0x10BC8D: main (main.cpp:54)
+     n0: 128000 0x10BD6E: main (main.cpp:56)
+     n0: 124000 0x10BBAF: main (main.cpp:52)
+     n0: 124000 0x10BDE0: main (main.cpp:57)
+     n0: 124000 0x10BEC4: main (main.cpp:59)
+     n0: 120000 0x10BC1E: main (main.cpp:53)
+     n0: 116000 0x10BCFC: main (main.cpp:55)
+     n0: 56000 0x10BE52: main (main.cpp:58)
+ n1: 73728 0x490E38E: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33)
+  n1: 73728 0x400571E: call_init.part.0 (dl-init.c:74)
+   n1: 73728 0x4005823: call_init (dl-init.c:120)
+    n1: 73728 0x4005823: _dl_init (dl-init.c:121)
+     n1: 73728 0x401F59F: ??? (in /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+      n1: 73728 0x1: ???
+       n1: 73728 0x1FFF00002E: ???
+        n0: 73728 0x1FFF00003A: ???
+ n0: 21768 0x10B802: main (main.cpp:42)
+ n0: 16757 in 6 places, all below massif's threshold (1.00%)
+ n1: 16560 0x10A66D: NewNode(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:16)
+  n1: 16560 0x10A93C: Insert(Node*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:63)
+   n1: 16560 0x10B1C5: FindAndInsert(Node*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:193)
+    n0: 16560 in 8 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=26
+#-----------
+time=1113080
+mem_heap_B=1089690
+mem_heap_extra_B=7550
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=27
+#-----------
+time=1163048
+mem_heap_B=1138769
+mem_heap_extra_B=7959
+mem_stacks_B=0
+heap_tree=detailed
+n5: 1138769 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 1008000 0x10B3A3: Node::Node() (AVL.hpp:6)
+  n1: 1008000 0x10A696: NewNode(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:16)
+   n1: 1008000 0x10A93C: Insert(Node*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:63)
+    n8: 1008000 0x10B1C5: FindAndInsert(Node*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:193)
+     n0: 140000 0x10BC8D: main (main.cpp:54)
+     n0: 140000 0x10BD6E: main (main.cpp:56)
+     n0: 136000 0x10BBAF: main (main.cpp:52)
+     n0: 136000 0x10BDE0: main (main.cpp:57)
+     n0: 136000 0x10BEC4: main (main.cpp:59)
+     n0: 132000 0x10BC1E: main (main.cpp:53)
+     n0: 124000 0x10BCFC: main (main.cpp:55)
+     n0: 64000 0x10BE52: main (main.cpp:58)
+ n1: 73728 0x490E38E: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33)
+  n1: 73728 0x400571E: call_init.part.0 (dl-init.c:74)
+   n1: 73728 0x4005823: call_init (dl-init.c:120)
+    n1: 73728 0x4005823: _dl_init (dl-init.c:121)
+     n1: 73728 0x401F59F: ??? (in /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+      n1: 73728 0x1: ???
+       n1: 73728 0x1FFF00002E: ???
+        n0: 73728 0x1FFF00003A: ???
+ n0: 21768 0x10B802: main (main.cpp:42)
+ n1: 18144 0x10A66D: NewNode(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:16)
+  n1: 18144 0x10A93C: Insert(Node*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:63)
+   n1: 18144 0x10B1C5: FindAndInsert(Node*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:193)
+    n0: 18144 in 8 places, all below massif's threshold (1.00%)
+ n0: 17129 in 6 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=28
+#-----------
+time=1205160
+mem_heap_B=1179646
+mem_heap_extra_B=8234
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=29
+#-----------
+time=1238488
+mem_heap_B=1212284
+mem_heap_extra_B=8444
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=30
+#-----------
+time=1288552
+mem_heap_B=1261425
+mem_heap_extra_B=8887
+mem_stacks_B=0
+heap_tree=detailed
+n5: 1261425 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 1128000 0x10B3A3: Node::Node() (AVL.hpp:6)
+  n1: 1128000 0x10A696: NewNode(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:16)
+   n1: 1128000 0x10A93C: Insert(Node*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:63)
+    n8: 1128000 0x10B1C5: FindAndInsert(Node*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:193)
+     n0: 156000 0x10BC8D: main (main.cpp:54)
+     n0: 156000 0x10BD6E: main (main.cpp:56)
+     n0: 152000 0x10BBAF: main (main.cpp:52)
+     n0: 152000 0x10BDE0: main (main.cpp:57)
+     n0: 152000 0x10BEC4: main (main.cpp:59)
+     n0: 144000 0x10BC1E: main (main.cpp:53)
+     n0: 140000 0x10BCFC: main (main.cpp:55)
+     n0: 76000 0x10BE52: main (main.cpp:58)
+ n1: 73728 0x490E38E: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33)
+  n1: 73728 0x400571E: call_init.part.0 (dl-init.c:74)
+   n1: 73728 0x4005823: call_init (dl-init.c:120)
+    n1: 73728 0x4005823: _dl_init (dl-init.c:121)
+     n1: 73728 0x401F59F: ??? (in /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+      n1: 73728 0x1: ???
+       n1: 73728 0x1FFF00002E: ???
+        n0: 73728 0x1FFF00003A: ???
+ n0: 21768 0x10B802: main (main.cpp:42)
+ n1: 20304 0x10A66D: NewNode(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:16)
+  n1: 20304 0x10A93C: Insert(Node*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:63)
+   n1: 20304 0x10B1C5: FindAndInsert(Node*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:193)
+    n0: 20304 in 8 places, all below massif's threshold (1.00%)
+ n0: 17625 in 6 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=31
+#-----------
+time=1347048
+mem_heap_B=1318590
+mem_heap_extra_B=9258
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=32
+#-----------
+time=1384728
+mem_heap_B=1355453
+mem_heap_extra_B=9595
+mem_stacks_B=0
+heap_tree=detailed
+n5: 1355453 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 1220000 0x10B3A3: Node::Node() (AVL.hpp:6)
+  n1: 1220000 0x10A696: NewNode(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:16)
+   n1: 1220000 0x10A93C: Insert(Node*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:63)
+    n8: 1220000 0x10B1C5: FindAndInsert(Node*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:193)
+     n0: 168000 0x10BC8D: main (main.cpp:54)
+     n0: 168000 0x10BD6E: main (main.cpp:56)
+     n0: 164000 0x10BBAF: main (main.cpp:52)
+     n0: 164000 0x10BDE0: main (main.cpp:57)
+     n0: 164000 0x10BEC4: main (main.cpp:59)
+     n0: 156000 0x10BC1E: main (main.cpp:53)
+     n0: 152000 0x10BCFC: main (main.cpp:55)
+     n0: 84000 0x10BE52: main (main.cpp:58)
+ n1: 73728 0x490E38E: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33)
+  n1: 73728 0x400571E: call_init.part.0 (dl-init.c:74)
+   n1: 73728 0x4005823: call_init (dl-init.c:120)
+    n1: 73728 0x4005823: _dl_init (dl-init.c:121)
+     n1: 73728 0x401F59F: ??? (in /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+      n1: 73728 0x1: ???
+       n1: 73728 0x1FFF00002E: ???
+        n0: 73728 0x1FFF00003A: ???
+ n1: 21960 0x10A66D: NewNode(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:16)
+  n1: 21960 0x10A93C: Insert(Node*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:63)
+   n1: 21960 0x10B1C5: FindAndInsert(Node*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:193)
+    n0: 21960 in 8 places, all below massif's threshold (1.00%)
+ n0: 21768 0x10B802: main (main.cpp:42)
+ n0: 17997 in 6 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=33
+#-----------
+time=1435032
+mem_heap_B=1404474
+mem_heap_extra_B=9918
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=34
+#-----------
+time=1468456
+mem_heap_B=1437174
+mem_heap_extra_B=10162
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=35
+#-----------
+time=1514328
+mem_heap_B=1482181
+mem_heap_extra_B=10547
+mem_stacks_B=0
+heap_tree=detailed
+n5: 1482181 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 1344000 0x10B3A3: Node::Node() (AVL.hpp:6)
+  n1: 1344000 0x10A696: NewNode(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:16)
+   n1: 1344000 0x10A93C: Insert(Node*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:63)
+    n8: 1344000 0x10B1C5: FindAndInsert(Node*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:193)
+     n0: 184000 0x10BC8D: main (main.cpp:54)
+     n0: 184000 0x10BD6E: main (main.cpp:56)
+     n0: 180000 0x10BBAF: main (main.cpp:52)
+     n0: 180000 0x10BDE0: main (main.cpp:57)
+     n0: 180000 0x10BEC4: main (main.cpp:59)
+     n0: 172000 0x10BC1E: main (main.cpp:53)
+     n0: 164000 0x10BCFC: main (main.cpp:55)
+     n0: 100000 0x10BE52: main (main.cpp:58)
+ n1: 73728 0x490E38E: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33)
+  n1: 73728 0x400571E: call_init.part.0 (dl-init.c:74)
+   n1: 73728 0x4005823: call_init (dl-init.c:120)
+    n1: 73728 0x4005823: _dl_init (dl-init.c:121)
+     n1: 73728 0x401F59F: ??? (in /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+      n1: 73728 0x1: ???
+       n1: 73728 0x1FFF00002E: ???
+        n0: 73728 0x1FFF00003A: ???
+ n1: 24192 0x10A66D: NewNode(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:16)
+  n1: 24192 0x10A93C: Insert(Node*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:63)
+   n1: 24192 0x10B1C5: FindAndInsert(Node*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:193)
+    n0: 24192 in 8 places, all below massif's threshold (1.00%)
+ n0: 21768 0x10B802: main (main.cpp:42)
+ n0: 18493 in 6 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=36
+#-----------
+time=1568888
+mem_heap_B=1535365
+mem_heap_extra_B=10963
+mem_stacks_B=0
+heap_tree=detailed
+n5: 1535365 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 1396000 0x10B3A3: Node::Node() (AVL.hpp:6)
+  n1: 1396000 0x10A696: NewNode(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:16)
+   n1: 1396000 0x10A93C: Insert(Node*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:63)
+    n8: 1396000 0x10B1C5: FindAndInsert(Node*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:193)
+     n0: 192000 0x10BC8D: main (main.cpp:54)
+     n0: 192000 0x10BD6E: main (main.cpp:56)
+     n0: 188000 0x10BBAF: main (main.cpp:52)
+     n0: 188000 0x10BDE0: main (main.cpp:57)
+     n0: 188000 0x10BEC4: main (main.cpp:59)
+     n0: 180000 0x10BC1E: main (main.cpp:53)
+     n0: 168000 0x10BCFC: main (main.cpp:55)
+     n0: 100000 0x10BE52: main (main.cpp:58)
+ n1: 73728 0x490E38E: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33)
+  n1: 73728 0x400571E: call_init.part.0 (dl-init.c:74)
+   n1: 73728 0x4005823: call_init (dl-init.c:120)
+    n1: 73728 0x4005823: _dl_init (dl-init.c:121)
+     n1: 73728 0x401F59F: ??? (in /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+      n1: 73728 0x1: ???
+       n1: 73728 0x1FFF00002E: ???
+        n0: 73728 0x1FFF00003A: ???
+ n1: 25128 0x10A66D: NewNode(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:16)
+  n1: 25128 0x10A93C: Insert(Node*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:63)
+   n1: 25128 0x10B1C5: FindAndInsert(Node*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:193)
+    n0: 25128 in 8 places, all below massif's threshold (1.00%)
+ n0: 21768 0x10B802: main (main.cpp:42)
+ n0: 18741 in 6 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=37
+#-----------
+time=1602312
+mem_heap_B=1568065
+mem_heap_extra_B=11207
+mem_stacks_B=0
+heap_tree=detailed
+n5: 1568065 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 1428000 0x10B3A3: Node::Node() (AVL.hpp:6)
+  n1: 1428000 0x10A696: NewNode(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:16)
+   n1: 1428000 0x10A93C: Insert(Node*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:63)
+    n8: 1428000 0x10B1C5: FindAndInsert(Node*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:193)
+     n0: 196000 0x10BC8D: main (main.cpp:54)
+     n0: 196000 0x10BD6E: main (main.cpp:56)
+     n0: 192000 0x10BBAF: main (main.cpp:52)
+     n0: 192000 0x10BDE0: main (main.cpp:57)
+     n0: 192000 0x10BEC4: main (main.cpp:59)
+     n0: 184000 0x10BC1E: main (main.cpp:53)
+     n0: 172000 0x10BCFC: main (main.cpp:55)
+     n0: 104000 0x10BE52: main (main.cpp:58)
+ n1: 73728 0x490E38E: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33)
+  n1: 73728 0x400571E: call_init.part.0 (dl-init.c:74)
+   n1: 73728 0x4005823: call_init (dl-init.c:120)
+    n1: 73728 0x4005823: _dl_init (dl-init.c:121)
+     n1: 73728 0x401F59F: ??? (in /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+      n1: 73728 0x1: ???
+       n1: 73728 0x1FFF00002E: ???
+        n0: 73728 0x1FFF00003A: ???
+ n1: 25704 0x10A66D: NewNode(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:16)
+  n1: 25704 0x10A93C: Insert(Node*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:63)
+   n1: 25704 0x10B1C5: FindAndInsert(Node*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:193)
+    n0: 25704 in 8 places, all below massif's threshold (1.00%)
+ n0: 21768 0x10B802: main (main.cpp:42)
+ n0: 18865 in 6 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=38
+#-----------
+time=1635736
+mem_heap_B=1600765
+mem_heap_extra_B=11451
+mem_stacks_B=0
+heap_tree=detailed
+n5: 1600765 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 1460000 0x10B3A3: Node::Node() (AVL.hpp:6)
+  n1: 1460000 0x10A696: NewNode(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:16)
+   n1: 1460000 0x10A93C: Insert(Node*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:63)
+    n8: 1460000 0x10B1C5: FindAndInsert(Node*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:193)
+     n0: 200000 0x10BC8D: main (main.cpp:54)
+     n0: 200000 0x10BD6E: main (main.cpp:56)
+     n0: 196000 0x10BBAF: main (main.cpp:52)
+     n0: 196000 0x10BDE0: main (main.cpp:57)
+     n0: 196000 0x10BEC4: main (main.cpp:59)
+     n0: 188000 0x10BC1E: main (main.cpp:53)
+     n0: 176000 0x10BCFC: main (main.cpp:55)
+     n0: 108000 0x10BE52: main (main.cpp:58)
+ n1: 73728 0x490E38E: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33)
+  n1: 73728 0x400571E: call_init.part.0 (dl-init.c:74)
+   n1: 73728 0x4005823: call_init (dl-init.c:120)
+    n1: 73728 0x4005823: _dl_init (dl-init.c:121)
+     n1: 73728 0x401F59F: ??? (in /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+      n1: 73728 0x1: ???
+       n1: 73728 0x1FFF00002E: ???
+        n0: 73728 0x1FFF00003A: ???
+ n1: 26280 0x10A66D: NewNode(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:16)
+  n1: 26280 0x10A93C: Insert(Node*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:63)
+   n1: 26280 0x10B1C5: FindAndInsert(Node*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:193)
+    n0: 26280 in 8 places, all below massif's threshold (1.00%)
+ n0: 21768 0x10B802: main (main.cpp:42)
+ n0: 18989 in 6 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=39
+#-----------
+time=1690296
+mem_heap_B=1653949
+mem_heap_extra_B=11867
+mem_stacks_B=0
+heap_tree=detailed
+n5: 1653949 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 1512000 0x10B3A3: Node::Node() (AVL.hpp:6)
+  n1: 1512000 0x10A696: NewNode(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:16)
+   n1: 1512000 0x10A93C: Insert(Node*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:63)
+    n8: 1512000 0x10B1C5: FindAndInsert(Node*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:193)
+     n0: 208000 0x10BC8D: main (main.cpp:54)
+     n0: 208000 0x10BD6E: main (main.cpp:56)
+     n0: 204000 0x10BBAF: main (main.cpp:52)
+     n0: 204000 0x10BDE0: main (main.cpp:57)
+     n0: 204000 0x10BEC4: main (main.cpp:59)
+     n0: 196000 0x10BC1E: main (main.cpp:53)
+     n0: 180000 0x10BCFC: main (main.cpp:55)
+     n0: 108000 0x10BE52: main (main.cpp:58)
+ n1: 73728 0x490E38E: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33)
+  n1: 73728 0x400571E: call_init.part.0 (dl-init.c:74)
+   n1: 73728 0x4005823: call_init (dl-init.c:120)
+    n1: 73728 0x4005823: _dl_init (dl-init.c:121)
+     n1: 73728 0x401F59F: ??? (in /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+      n1: 73728 0x1: ???
+       n1: 73728 0x1FFF00002E: ???
+        n0: 73728 0x1FFF00003A: ???
+ n1: 27216 0x10A66D: NewNode(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:16)
+  n1: 27216 0x10A93C: Insert(Node*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:63)
+   n1: 27216 0x10B1C5: FindAndInsert(Node*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:193)
+    n0: 27216 in 8 places, all below massif's threshold (1.00%)
+ n0: 21768 0x10B802: main (main.cpp:42)
+ n0: 19237 in 6 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=40
+#-----------
+time=1719624
+mem_heap_B=1682577
+mem_heap_extra_B=12087
+mem_stacks_B=0
+heap_tree=detailed
+n5: 1682577 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 1540000 0x10B3A3: Node::Node() (AVL.hpp:6)
+  n1: 1540000 0x10A696: NewNode(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:16)
+   n1: 1540000 0x10A93C: Insert(Node*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:63)
+    n8: 1540000 0x10B1C5: FindAndInsert(Node*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:193)
+     n0: 212000 0x10BC8D: main (main.cpp:54)
+     n0: 212000 0x10BD6E: main (main.cpp:56)
+     n0: 208000 0x10BBAF: main (main.cpp:52)
+     n0: 208000 0x10BDE0: main (main.cpp:57)
+     n0: 208000 0x10BEC4: main (main.cpp:59)
+     n0: 200000 0x10BC1E: main (main.cpp:53)
+     n0: 184000 0x10BCFC: main (main.cpp:55)
+     n0: 108000 0x10BE52: main (main.cpp:58)
+ n1: 73728 0x490E38E: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33)
+  n1: 73728 0x400571E: call_init.part.0 (dl-init.c:74)
+   n1: 73728 0x4005823: call_init (dl-init.c:120)
+    n1: 73728 0x4005823: _dl_init (dl-init.c:121)
+     n1: 73728 0x401F59F: ??? (in /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+      n1: 73728 0x1: ???
+       n1: 73728 0x1FFF00002E: ???
+        n0: 73728 0x1FFF00003A: ???
+ n1: 27720 0x10A66D: NewNode(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:16)
+  n1: 27720 0x10A93C: Insert(Node*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:63)
+   n1: 27720 0x10B1C5: FindAndInsert(Node*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:193)
+    n0: 27720 in 8 places, all below massif's threshold (1.00%)
+ n0: 21768 0x10B802: main (main.cpp:42)
+ n0: 19361 in 6 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=41
+#-----------
+time=1753048
+mem_heap_B=1715277
+mem_heap_extra_B=12331
+mem_stacks_B=0
+heap_tree=detailed
+n5: 1715277 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 1572000 0x10B3A3: Node::Node() (AVL.hpp:6)
+  n1: 1572000 0x10A696: NewNode(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:16)
+   n1: 1572000 0x10A93C: Insert(Node*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:63)
+    n8: 1572000 0x10B1C5: FindAndInsert(Node*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:193)
+     n0: 216000 0x10BC8D: main (main.cpp:54)
+     n0: 216000 0x10BD6E: main (main.cpp:56)
+     n0: 212000 0x10BBAF: main (main.cpp:52)
+     n0: 212000 0x10BDE0: main (main.cpp:57)
+     n0: 212000 0x10BEC4: main (main.cpp:59)
+     n0: 204000 0x10BC1E: main (main.cpp:53)
+     n0: 188000 0x10BCFC: main (main.cpp:55)
+     n0: 112000 0x10BE52: main (main.cpp:58)
+ n1: 73728 0x490E38E: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33)
+  n1: 73728 0x400571E: call_init.part.0 (dl-init.c:74)
+   n1: 73728 0x4005823: call_init (dl-init.c:120)
+    n1: 73728 0x4005823: _dl_init (dl-init.c:121)
+     n1: 73728 0x401F59F: ??? (in /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+      n1: 73728 0x1: ???
+       n1: 73728 0x1FFF00002E: ???
+        n0: 73728 0x1FFF00003A: ???
+ n1: 28296 0x10A66D: NewNode(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:16)
+  n1: 28296 0x10A93C: Insert(Node*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:63)
+   n1: 28296 0x10B1C5: FindAndInsert(Node*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:193)
+    n0: 28296 in 8 places, all below massif's threshold (1.00%)
+ n0: 21768 0x10B802: main (main.cpp:42)
+ n0: 19485 in 6 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=42
+#-----------
+time=1786472
+mem_heap_B=1747977
+mem_heap_extra_B=12575
+mem_stacks_B=0
+heap_tree=detailed
+n5: 1747977 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 1604000 0x10B3A3: Node::Node() (AVL.hpp:6)
+  n1: 1604000 0x10A696: NewNode(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:16)
+   n1: 1604000 0x10A93C: Insert(Node*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:63)
+    n8: 1604000 0x10B1C5: FindAndInsert(Node*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:193)
+     n0: 220000 0x10BC8D: main (main.cpp:54)
+     n0: 220000 0x10BD6E: main (main.cpp:56)
+     n0: 216000 0x10BBAF: main (main.cpp:52)
+     n0: 216000 0x10BDE0: main (main.cpp:57)
+     n0: 216000 0x10BEC4: main (main.cpp:59)
+     n0: 208000 0x10BC1E: main (main.cpp:53)
+     n0: 192000 0x10BCFC: main (main.cpp:55)
+     n0: 116000 0x10BE52: main (main.cpp:58)
+ n1: 73728 0x490E38E: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33)
+  n1: 73728 0x400571E: call_init.part.0 (dl-init.c:74)
+   n1: 73728 0x4005823: call_init (dl-init.c:120)
+    n1: 73728 0x4005823: _dl_init (dl-init.c:121)
+     n1: 73728 0x401F59F: ??? (in /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+      n1: 73728 0x1: ???
+       n1: 73728 0x1FFF00002E: ???
+        n0: 73728 0x1FFF00003A: ???
+ n1: 28872 0x10A66D: NewNode(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:16)
+  n1: 28872 0x10A93C: Insert(Node*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:63)
+   n1: 28872 0x10B1C5: FindAndInsert(Node*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:193)
+    n0: 28872 in 8 places, all below massif's threshold (1.00%)
+ n0: 21768 0x10B802: main (main.cpp:42)
+ n0: 19609 in 6 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=43
+#-----------
+time=1819896
+mem_heap_B=1780677
+mem_heap_extra_B=12819
+mem_stacks_B=0
+heap_tree=detailed
+n5: 1780677 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 1636000 0x10B3A3: Node::Node() (AVL.hpp:6)
+  n1: 1636000 0x10A696: NewNode(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:16)
+   n1: 1636000 0x10A93C: Insert(Node*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:63)
+    n8: 1636000 0x10B1C5: FindAndInsert(Node*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:193)
+     n0: 224000 0x10BC8D: main (main.cpp:54)
+     n0: 224000 0x10BD6E: main (main.cpp:56)
+     n0: 220000 0x10BBAF: main (main.cpp:52)
+     n0: 220000 0x10BDE0: main (main.cpp:57)
+     n0: 220000 0x10BEC4: main (main.cpp:59)
+     n0: 212000 0x10BC1E: main (main.cpp:53)
+     n0: 196000 0x10BCFC: main (main.cpp:55)
+     n0: 120000 0x10BE52: main (main.cpp:58)
+ n1: 73728 0x490E38E: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33)
+  n1: 73728 0x400571E: call_init.part.0 (dl-init.c:74)
+   n1: 73728 0x4005823: call_init (dl-init.c:120)
+    n1: 73728 0x4005823: _dl_init (dl-init.c:121)
+     n1: 73728 0x401F59F: ??? (in /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+      n1: 73728 0x1: ???
+       n1: 73728 0x1FFF00002E: ???
+        n0: 73728 0x1FFF00003A: ???
+ n1: 29448 0x10A66D: NewNode(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:16)
+  n1: 29448 0x10A93C: Insert(Node*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:63)
+   n1: 29448 0x10B1C5: FindAndInsert(Node*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:193)
+    n0: 29448 in 8 places, all below massif's threshold (1.00%)
+ n0: 21768 0x10B802: main (main.cpp:42)
+ n0: 19733 in 6 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=44
+#-----------
+time=1853320
+mem_heap_B=1813377
+mem_heap_extra_B=13063
+mem_stacks_B=0
+heap_tree=detailed
+n5: 1813377 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 1668000 0x10B3A3: Node::Node() (AVL.hpp:6)
+  n1: 1668000 0x10A696: NewNode(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:16)
+   n1: 1668000 0x10A93C: Insert(Node*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:63)
+    n8: 1668000 0x10B1C5: FindAndInsert(Node*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:193)
+     n0: 228000 0x10BC8D: main (main.cpp:54)
+     n0: 228000 0x10BD6E: main (main.cpp:56)
+     n0: 224000 0x10BBAF: main (main.cpp:52)
+     n0: 224000 0x10BDE0: main (main.cpp:57)
+     n0: 224000 0x10BEC4: main (main.cpp:59)
+     n0: 216000 0x10BC1E: main (main.cpp:53)
+     n0: 200000 0x10BCFC: main (main.cpp:55)
+     n0: 124000 0x10BE52: main (main.cpp:58)
+ n1: 73728 0x490E38E: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33)
+  n1: 73728 0x400571E: call_init.part.0 (dl-init.c:74)
+   n1: 73728 0x4005823: call_init (dl-init.c:120)
+    n1: 73728 0x4005823: _dl_init (dl-init.c:121)
+     n1: 73728 0x401F59F: ??? (in /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+      n1: 73728 0x1: ???
+       n1: 73728 0x1FFF00002E: ???
+        n0: 73728 0x1FFF00003A: ???
+ n1: 30024 0x10A66D: NewNode(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:16)
+  n1: 30024 0x10A93C: Insert(Node*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:63)
+   n1: 30024 0x10B1C5: FindAndInsert(Node*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:193)
+    n0: 30024 in 8 places, all below massif's threshold (1.00%)
+ n0: 21768 0x10B802: main (main.cpp:42)
+ n0: 19857 in 6 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=45
+#-----------
+time=1911976
+mem_heap_B=1870633
+mem_heap_extra_B=13503
+mem_stacks_B=0
+heap_tree=detailed
+n5: 1870633 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 1724000 0x10B3A3: Node::Node() (AVL.hpp:6)
+  n1: 1724000 0x10A696: NewNode(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:16)
+   n1: 1724000 0x10A93C: Insert(Node*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:63)
+    n8: 1724000 0x10B1C5: FindAndInsert(Node*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:193)
+     n0: 236000 0x10BC8D: main (main.cpp:54)
+     n0: 236000 0x10BD6E: main (main.cpp:56)
+     n0: 232000 0x10BBAF: main (main.cpp:52)
+     n0: 232000 0x10BDE0: main (main.cpp:57)
+     n0: 232000 0x10BEC4: main (main.cpp:59)
+     n0: 224000 0x10BC1E: main (main.cpp:53)
+     n0: 208000 0x10BCFC: main (main.cpp:55)
+     n0: 124000 0x10BE52: main (main.cpp:58)
+ n1: 73728 0x490E38E: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33)
+  n1: 73728 0x400571E: call_init.part.0 (dl-init.c:74)
+   n1: 73728 0x4005823: call_init (dl-init.c:120)
+    n1: 73728 0x4005823: _dl_init (dl-init.c:121)
+     n1: 73728 0x401F59F: ??? (in /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+      n1: 73728 0x1: ???
+       n1: 73728 0x1FFF00002E: ???
+        n0: 73728 0x1FFF00003A: ???
+ n1: 31032 0x10A66D: NewNode(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:16)
+  n1: 31032 0x10A93C: Insert(Node*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:63)
+   n1: 31032 0x10B1C5: FindAndInsert(Node*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:193)
+    n0: 31032 in 8 places, all below massif's threshold (1.00%)
+ n0: 21768 0x10B802: main (main.cpp:42)
+ n0: 20105 in 6 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=46
+#-----------
+time=1970632
+mem_heap_B=1927889
+mem_heap_extra_B=13943
+mem_stacks_B=0
+heap_tree=detailed
+n5: 1927889 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 1780000 0x10B3A3: Node::Node() (AVL.hpp:6)
+  n1: 1780000 0x10A696: NewNode(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:16)
+   n1: 1780000 0x10A93C: Insert(Node*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:63)
+    n8: 1780000 0x10B1C5: FindAndInsert(Node*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:193)
+     n0: 244000 0x10BC8D: main (main.cpp:54)
+     n0: 244000 0x10BD6E: main (main.cpp:56)
+     n0: 240000 0x10BBAF: main (main.cpp:52)
+     n0: 240000 0x10BDE0: main (main.cpp:57)
+     n0: 240000 0x10BEC4: main (main.cpp:59)
+     n0: 232000 0x10BC1E: main (main.cpp:53)
+     n0: 216000 0x10BCFC: main (main.cpp:55)
+     n0: 124000 0x10BE52: main (main.cpp:58)
+ n1: 73728 0x490E38E: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33)
+  n1: 73728 0x400571E: call_init.part.0 (dl-init.c:74)
+   n1: 73728 0x4005823: call_init (dl-init.c:120)
+    n1: 73728 0x4005823: _dl_init (dl-init.c:121)
+     n1: 73728 0x401F59F: ??? (in /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+      n1: 73728 0x1: ???
+       n1: 73728 0x1FFF00002E: ???
+        n0: 73728 0x1FFF00003A: ???
+ n1: 32040 0x10A66D: NewNode(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:16)
+  n1: 32040 0x10A93C: Insert(Node*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:63)
+   n1: 32040 0x10B1C5: FindAndInsert(Node*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:193)
+    n0: 32040 in 8 places, all below massif's threshold (1.00%)
+ n0: 21768 0x10B802: main (main.cpp:42)
+ n0: 20353 in 6 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=47
+#-----------
+time=1999960
+mem_heap_B=1956517
+mem_heap_extra_B=14163
+mem_stacks_B=0
+heap_tree=detailed
+n5: 1956517 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 1808000 0x10B3A3: Node::Node() (AVL.hpp:6)
+  n1: 1808000 0x10A696: NewNode(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:16)
+   n1: 1808000 0x10A93C: Insert(Node*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:63)
+    n8: 1808000 0x10B1C5: FindAndInsert(Node*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:193)
+     n0: 248000 0x10BC8D: main (main.cpp:54)
+     n0: 248000 0x10BD6E: main (main.cpp:56)
+     n0: 244000 0x10BBAF: main (main.cpp:52)
+     n0: 244000 0x10BDE0: main (main.cpp:57)
+     n0: 244000 0x10BEC4: main (main.cpp:59)
+     n0: 236000 0x10BC1E: main (main.cpp:53)
+     n0: 220000 0x10BCFC: main (main.cpp:55)
+     n0: 124000 0x10BE52: main (main.cpp:58)
+ n1: 73728 0x490E38E: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33)
+  n1: 73728 0x400571E: call_init.part.0 (dl-init.c:74)
+   n1: 73728 0x4005823: call_init (dl-init.c:120)
+    n1: 73728 0x4005823: _dl_init (dl-init.c:121)
+     n1: 73728 0x401F59F: ??? (in /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+      n1: 73728 0x1: ???
+       n1: 73728 0x1FFF00002E: ???
+        n0: 73728 0x1FFF00003A: ???
+ n1: 32544 0x10A66D: NewNode(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:16)
+  n1: 32544 0x10A93C: Insert(Node*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:63)
+   n1: 32544 0x10B1C5: FindAndInsert(Node*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:193)
+    n0: 32544 in 8 places, all below massif's threshold (1.00%)
+ n0: 21768 0x10B802: main (main.cpp:42)
+ n0: 20477 in 6 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=48
+#-----------
+time=2029288
+mem_heap_B=1985145
+mem_heap_extra_B=14383
+mem_stacks_B=0
+heap_tree=detailed
+n5: 1985145 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 1836000 0x10B3A3: Node::Node() (AVL.hpp:6)
+  n1: 1836000 0x10A696: NewNode(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:16)
+   n1: 1836000 0x10A93C: Insert(Node*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:63)
+    n8: 1836000 0x10B1C5: FindAndInsert(Node*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:193)
+     n0: 252000 0x10BC8D: main (main.cpp:54)
+     n0: 252000 0x10BD6E: main (main.cpp:56)
+     n0: 248000 0x10BBAF: main (main.cpp:52)
+     n0: 248000 0x10BDE0: main (main.cpp:57)
+     n0: 248000 0x10BEC4: main (main.cpp:59)
+     n0: 240000 0x10BC1E: main (main.cpp:53)
+     n0: 224000 0x10BCFC: main (main.cpp:55)
+     n0: 124000 0x10BE52: main (main.cpp:58)
+ n1: 73728 0x490E38E: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33)
+  n1: 73728 0x400571E: call_init.part.0 (dl-init.c:74)
+   n1: 73728 0x4005823: call_init (dl-init.c:120)
+    n1: 73728 0x4005823: _dl_init (dl-init.c:121)
+     n1: 73728 0x401F59F: ??? (in /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+      n1: 73728 0x1: ???
+       n1: 73728 0x1FFF00002E: ???
+        n0: 73728 0x1FFF00003A: ???
+ n1: 33048 0x10A66D: NewNode(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:16)
+  n1: 33048 0x10A93C: Insert(Node*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:63)
+   n1: 33048 0x10B1C5: FindAndInsert(Node*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:193)
+    n0: 33048 in 8 places, all below massif's threshold (1.00%)
+ n0: 21768 0x10B802: main (main.cpp:42)
+ n0: 20601 in 6 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=49
+#-----------
+time=2046168
+mem_heap_B=2001466
+mem_heap_extra_B=14462
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=50
+#-----------
+time=2058616
+mem_heap_B=2013773
+mem_heap_extra_B=14603
+mem_stacks_B=0
+heap_tree=detailed
+n5: 2013773 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 1864000 0x10B3A3: Node::Node() (AVL.hpp:6)
+  n1: 1864000 0x10A696: NewNode(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:16)
+   n1: 1864000 0x10A93C: Insert(Node*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:63)
+    n8: 1864000 0x10B1C5: FindAndInsert(Node*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:193)
+     n0: 256000 0x10BC8D: main (main.cpp:54)
+     n0: 256000 0x10BD6E: main (main.cpp:56)
+     n0: 252000 0x10BBAF: main (main.cpp:52)
+     n0: 252000 0x10BDE0: main (main.cpp:57)
+     n0: 252000 0x10BEC4: main (main.cpp:59)
+     n0: 244000 0x10BC1E: main (main.cpp:53)
+     n0: 228000 0x10BCFC: main (main.cpp:55)
+     n0: 124000 0x10BE52: main (main.cpp:58)
+ n1: 73728 0x490E38E: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33)
+  n1: 73728 0x400571E: call_init.part.0 (dl-init.c:74)
+   n1: 73728 0x4005823: call_init (dl-init.c:120)
+    n1: 73728 0x4005823: _dl_init (dl-init.c:121)
+     n1: 73728 0x401F59F: ??? (in /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+      n1: 73728 0x1: ???
+       n1: 73728 0x1FFF00002E: ???
+        n0: 73728 0x1FFF00003A: ???
+ n1: 33552 0x10A66D: NewNode(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:16)
+  n1: 33552 0x10A93C: Insert(Node*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:63)
+   n1: 33552 0x10B1C5: FindAndInsert(Node*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:193)
+    n0: 33552 in 8 places, all below massif's threshold (1.00%)
+ n0: 21768 0x10B802: main (main.cpp:42)
+ n0: 20725 in 6 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=51
+#-----------
+time=2083808
+mem_heap_B=2038298
+mem_heap_extra_B=14790
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=52
+#-----------
+time=2083848
+mem_heap_B=2038329
+mem_heap_extra_B=14799
+mem_stacks_B=0
+heap_tree=detailed
+n5: 2038329 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 1888000 0x10B3A3: Node::Node() (AVL.hpp:6)
+  n1: 1888000 0x10A696: NewNode(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:16)
+   n1: 1888000 0x10A93C: Insert(Node*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:63)
+    n8: 1888000 0x10B1C5: FindAndInsert(Node*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:193)
+     n0: 260000 0x10BC8D: main (main.cpp:54)
+     n0: 260000 0x10BD6E: main (main.cpp:56)
+     n0: 256000 0x10BDE0: main (main.cpp:57)
+     n0: 256000 0x10BEC4: main (main.cpp:59)
+     n0: 252000 0x10BBAF: main (main.cpp:52)
+     n0: 248000 0x10BC1E: main (main.cpp:53)
+     n0: 232000 0x10BCFC: main (main.cpp:55)
+     n0: 124000 0x10BE52: main (main.cpp:58)
+ n1: 73728 0x490E38E: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33)
+  n1: 73728 0x400571E: call_init.part.0 (dl-init.c:74)
+   n1: 73728 0x4005823: call_init (dl-init.c:120)
+    n1: 73728 0x4005823: _dl_init (dl-init.c:121)
+     n1: 73728 0x401F59F: ??? (in /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+      n1: 73728 0x1: ???
+       n1: 73728 0x1FFF00002E: ???
+        n0: 73728 0x1FFF00003A: ???
+ n1: 33984 0x10A66D: NewNode(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:16)
+  n1: 33984 0x10A93C: Insert(Node*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:63)
+   n1: 33984 0x10B1C5: FindAndInsert(Node*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:193)
+    n0: 33984 in 8 places, all below massif's threshold (1.00%)
+ n0: 21768 0x10B802: main (main.cpp:42)
+ n0: 20849 in 6 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=53
+#-----------
+time=2109008
+mem_heap_B=2062866
+mem_heap_extra_B=14942
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=54
+#-----------
+time=2117272
+mem_heap_B=2071029
+mem_heap_extra_B=15043
+mem_stacks_B=0
+heap_tree=detailed
+n5: 2071029 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 1920000 0x10B3A3: Node::Node() (AVL.hpp:6)
+  n1: 1920000 0x10A696: NewNode(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:16)
+   n1: 1920000 0x10A93C: Insert(Node*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:63)
+    n8: 1920000 0x10B1C5: FindAndInsert(Node*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:193)
+     n0: 264000 0x10BC8D: main (main.cpp:54)
+     n0: 264000 0x10BD6E: main (main.cpp:56)
+     n0: 260000 0x10BDE0: main (main.cpp:57)
+     n0: 260000 0x10BEC4: main (main.cpp:59)
+     n0: 256000 0x10BBAF: main (main.cpp:52)
+     n0: 252000 0x10BC1E: main (main.cpp:53)
+     n0: 236000 0x10BCFC: main (main.cpp:55)
+     n0: 128000 0x10BE52: main (main.cpp:58)
+ n1: 73728 0x490E38E: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33)
+  n1: 73728 0x400571E: call_init.part.0 (dl-init.c:74)
+   n1: 73728 0x4005823: call_init (dl-init.c:120)
+    n1: 73728 0x4005823: _dl_init (dl-init.c:121)
+     n1: 73728 0x401F59F: ??? (in /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+      n1: 73728 0x1: ???
+       n1: 73728 0x1FFF00002E: ???
+        n0: 73728 0x1FFF00003A: ???
+ n1: 34560 0x10A66D: NewNode(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:16)
+  n1: 34560 0x10A93C: Insert(Node*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:63)
+   n1: 34560 0x10B1C5: FindAndInsert(Node*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:193)
+    n0: 34560 in 8 places, all below massif's threshold (1.00%)
+ n0: 21768 0x10B802: main (main.cpp:42)
+ n0: 20973 in 6 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=55
+#-----------
+time=2142432
+mem_heap_B=2095566
+mem_heap_extra_B=15186
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=56
+#-----------
+time=2150696
+mem_heap_B=2103729
+mem_heap_extra_B=15287
+mem_stacks_B=0
+heap_tree=detailed
+n5: 2103729 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 1952000 0x10B3A3: Node::Node() (AVL.hpp:6)
+  n1: 1952000 0x10A696: NewNode(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:16)
+   n1: 1952000 0x10A93C: Insert(Node*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:63)
+    n8: 1952000 0x10B1C5: FindAndInsert(Node*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:193)
+     n0: 268000 0x10BC8D: main (main.cpp:54)
+     n0: 268000 0x10BD6E: main (main.cpp:56)
+     n0: 264000 0x10BDE0: main (main.cpp:57)
+     n0: 264000 0x10BEC4: main (main.cpp:59)
+     n0: 260000 0x10BBAF: main (main.cpp:52)
+     n0: 256000 0x10BC1E: main (main.cpp:53)
+     n0: 240000 0x10BCFC: main (main.cpp:55)
+     n0: 132000 0x10BE52: main (main.cpp:58)
+ n1: 73728 0x490E38E: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33)
+  n1: 73728 0x400571E: call_init.part.0 (dl-init.c:74)
+   n1: 73728 0x4005823: call_init (dl-init.c:120)
+    n1: 73728 0x4005823: _dl_init (dl-init.c:121)
+     n1: 73728 0x401F59F: ??? (in /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+      n1: 73728 0x1: ???
+       n1: 73728 0x1FFF00002E: ???
+        n0: 73728 0x1FFF00003A: ???
+ n1: 35136 0x10A66D: NewNode(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:16)
+  n1: 35136 0x10A93C: Insert(Node*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:63)
+   n1: 35136 0x10B1C5: FindAndInsert(Node*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:193)
+    n0: 35136 in 8 places, all below massif's threshold (1.00%)
+ n0: 21768 0x10B802: main (main.cpp:42)
+ n0: 21097 in 6 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=57
+#-----------
+time=2175808
+mem_heap_B=2128214
+mem_heap_extra_B=15434
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=58
+#-----------
+time=2180024
+mem_heap_B=2132357
+mem_heap_extra_B=15507
+mem_stacks_B=0
+heap_tree=detailed
+n5: 2132357 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 1980000 0x10B3A3: Node::Node() (AVL.hpp:6)
+  n1: 1980000 0x10A696: NewNode(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:16)
+   n1: 1980000 0x10A93C: Insert(Node*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:63)
+    n8: 1980000 0x10B1C5: FindAndInsert(Node*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:193)
+     n0: 272000 0x10BC8D: main (main.cpp:54)
+     n0: 272000 0x10BD6E: main (main.cpp:56)
+     n0: 268000 0x10BDE0: main (main.cpp:57)
+     n0: 268000 0x10BEC4: main (main.cpp:59)
+     n0: 264000 0x10BBAF: main (main.cpp:52)
+     n0: 260000 0x10BC1E: main (main.cpp:53)
+     n0: 244000 0x10BCFC: main (main.cpp:55)
+     n0: 132000 0x10BE52: main (main.cpp:58)
+ n1: 73728 0x490E38E: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33)
+  n1: 73728 0x400571E: call_init.part.0 (dl-init.c:74)
+   n1: 73728 0x4005823: call_init (dl-init.c:120)
+    n1: 73728 0x4005823: _dl_init (dl-init.c:121)
+     n1: 73728 0x401F59F: ??? (in /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+      n1: 73728 0x1: ???
+       n1: 73728 0x1FFF00002E: ???
+        n0: 73728 0x1FFF00003A: ???
+ n1: 35640 0x10A66D: NewNode(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:16)
+  n1: 35640 0x10A93C: Insert(Node*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:63)
+   n1: 35640 0x10B1C5: FindAndInsert(Node*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:193)
+    n0: 35640 in 8 places, all below massif's threshold (1.00%)
+ n0: 21768 0x10B802: main (main.cpp:42)
+ n0: 21221 in 6 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=59
+#-----------
+time=2205136
+mem_heap_B=2156842
+mem_heap_extra_B=15654
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=60
+#-----------
+time=2209352
+mem_heap_B=2160985
+mem_heap_extra_B=15727
+mem_stacks_B=0
+heap_tree=detailed
+n5: 2160985 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 2008000 0x10B3A3: Node::Node() (AVL.hpp:6)
+  n1: 2008000 0x10A696: NewNode(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:16)
+   n1: 2008000 0x10A93C: Insert(Node*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:63)
+    n8: 2008000 0x10B1C5: FindAndInsert(Node*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:193)
+     n0: 276000 0x10BC8D: main (main.cpp:54)
+     n0: 276000 0x10BD6E: main (main.cpp:56)
+     n0: 272000 0x10BDE0: main (main.cpp:57)
+     n0: 272000 0x10BEC4: main (main.cpp:59)
+     n0: 268000 0x10BBAF: main (main.cpp:52)
+     n0: 264000 0x10BC1E: main (main.cpp:53)
+     n0: 248000 0x10BCFC: main (main.cpp:55)
+     n0: 132000 0x10BE52: main (main.cpp:58)
+ n1: 73728 0x490E38E: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33)
+  n1: 73728 0x400571E: call_init.part.0 (dl-init.c:74)
+   n1: 73728 0x4005823: call_init (dl-init.c:120)
+    n1: 73728 0x4005823: _dl_init (dl-init.c:121)
+     n1: 73728 0x401F59F: ??? (in /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+      n1: 73728 0x1: ???
+       n1: 73728 0x1FFF00002E: ???
+        n0: 73728 0x1FFF00003A: ???
+ n1: 36144 0x10A66D: NewNode(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:16)
+  n1: 36144 0x10A93C: Insert(Node*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:63)
+   n1: 36144 0x10B1C5: FindAndInsert(Node*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:193)
+    n0: 36144 in 8 places, all below massif's threshold (1.00%)
+ n0: 21768 0x10B802: main (main.cpp:42)
+ n0: 21345 in 6 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=61
+#-----------
+time=2234464
+mem_heap_B=2185470
+mem_heap_extra_B=15874
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=62
+#-----------
+time=2238680
+mem_heap_B=2189613
+mem_heap_extra_B=15947
+mem_stacks_B=0
+heap_tree=detailed
+n4: 2189613 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 2036000 0x10B3A3: Node::Node() (AVL.hpp:6)
+  n1: 2036000 0x10A696: NewNode(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:16)
+   n1: 2036000 0x10A93C: Insert(Node*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:63)
+    n8: 2036000 0x10B1C5: FindAndInsert(Node*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:193)
+     n0: 280000 0x10BC8D: main (main.cpp:54)
+     n0: 280000 0x10BD6E: main (main.cpp:56)
+     n0: 276000 0x10BDE0: main (main.cpp:57)
+     n0: 276000 0x10BEC4: main (main.cpp:59)
+     n0: 272000 0x10BBAF: main (main.cpp:52)
+     n0: 268000 0x10BC1E: main (main.cpp:53)
+     n0: 252000 0x10BCFC: main (main.cpp:55)
+     n0: 132000 0x10BE52: main (main.cpp:58)
+ n1: 73728 0x490E38E: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33)
+  n1: 73728 0x400571E: call_init.part.0 (dl-init.c:74)
+   n1: 73728 0x4005823: call_init (dl-init.c:120)
+    n1: 73728 0x4005823: _dl_init (dl-init.c:121)
+     n1: 73728 0x401F59F: ??? (in /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+      n1: 73728 0x1: ???
+       n1: 73728 0x1FFF00002E: ???
+        n0: 73728 0x1FFF00003A: ???
+ n0: 43237 in 7 places, all below massif's threshold (1.00%)
+ n1: 36648 0x10A66D: NewNode(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:16)
+  n1: 36648 0x10A93C: Insert(Node*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:63)
+   n1: 36648 0x10B1C5: FindAndInsert(Node*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:193)
+    n0: 36648 in 8 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=63
+#-----------
+time=2263792
+mem_heap_B=2214098
+mem_heap_extra_B=16094
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=64
+#-----------
+time=2268008
+mem_heap_B=2218241
+mem_heap_extra_B=16167
+mem_stacks_B=0
+heap_tree=detailed
+n4: 2218241 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 2064000 0x10B3A3: Node::Node() (AVL.hpp:6)
+  n1: 2064000 0x10A696: NewNode(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:16)
+   n1: 2064000 0x10A93C: Insert(Node*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:63)
+    n8: 2064000 0x10B1C5: FindAndInsert(Node*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:193)
+     n0: 284000 0x10BC8D: main (main.cpp:54)
+     n0: 284000 0x10BD6E: main (main.cpp:56)
+     n0: 280000 0x10BDE0: main (main.cpp:57)
+     n0: 280000 0x10BEC4: main (main.cpp:59)
+     n0: 276000 0x10BBAF: main (main.cpp:52)
+     n0: 272000 0x10BC1E: main (main.cpp:53)
+     n0: 256000 0x10BCFC: main (main.cpp:55)
+     n0: 132000 0x10BE52: main (main.cpp:58)
+ n1: 73728 0x490E38E: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33)
+  n1: 73728 0x400571E: call_init.part.0 (dl-init.c:74)
+   n1: 73728 0x4005823: call_init (dl-init.c:120)
+    n1: 73728 0x4005823: _dl_init (dl-init.c:121)
+     n1: 73728 0x401F59F: ??? (in /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+      n1: 73728 0x1: ???
+       n1: 73728 0x1FFF00002E: ???
+        n0: 73728 0x1FFF00003A: ???
+ n0: 43361 in 7 places, all below massif's threshold (1.00%)
+ n1: 37152 0x10A66D: NewNode(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:16)
+  n1: 37152 0x10A93C: Insert(Node*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:63)
+   n1: 37152 0x10B1C5: FindAndInsert(Node*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:193)
+    n0: 37152 in 8 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=65
+#-----------
+time=2293168
+mem_heap_B=2242778
+mem_heap_extra_B=16310
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=66
+#-----------
+time=2301432
+mem_heap_B=2250941
+mem_heap_extra_B=16411
+mem_stacks_B=0
+heap_tree=detailed
+n4: 2250941 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 2096000 0x10B3A3: Node::Node() (AVL.hpp:6)
+  n1: 2096000 0x10A696: NewNode(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:16)
+   n1: 2096000 0x10A93C: Insert(Node*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:63)
+    n8: 2096000 0x10B1C5: FindAndInsert(Node*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:193)
+     n0: 288000 0x10BC8D: main (main.cpp:54)
+     n0: 288000 0x10BD6E: main (main.cpp:56)
+     n0: 284000 0x10BDE0: main (main.cpp:57)
+     n0: 284000 0x10BEC4: main (main.cpp:59)
+     n0: 280000 0x10BBAF: main (main.cpp:52)
+     n0: 276000 0x10BC1E: main (main.cpp:53)
+     n0: 260000 0x10BCFC: main (main.cpp:55)
+     n0: 136000 0x10BE52: main (main.cpp:58)
+ n1: 73728 0x490E38E: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33)
+  n1: 73728 0x400571E: call_init.part.0 (dl-init.c:74)
+   n1: 73728 0x4005823: call_init (dl-init.c:120)
+    n1: 73728 0x4005823: _dl_init (dl-init.c:121)
+     n1: 73728 0x401F59F: ??? (in /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+      n1: 73728 0x1: ???
+       n1: 73728 0x1FFF00002E: ???
+        n0: 73728 0x1FFF00003A: ???
+ n0: 43485 in 7 places, all below massif's threshold (1.00%)
+ n1: 37728 0x10A66D: NewNode(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:16)
+  n1: 37728 0x10A93C: Insert(Node*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:63)
+   n1: 37728 0x10B1C5: FindAndInsert(Node*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:193)
+    n0: 37728 in 8 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=67
+#-----------
+time=2326544
+mem_heap_B=2275426
+mem_heap_extra_B=16558
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=68
+#-----------
+time=2330760
+mem_heap_B=2279569
+mem_heap_extra_B=16631
+mem_stacks_B=0
+heap_tree=detailed
+n4: 2279569 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 2124000 0x10B3A3: Node::Node() (AVL.hpp:6)
+  n1: 2124000 0x10A696: NewNode(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:16)
+   n1: 2124000 0x10A93C: Insert(Node*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:63)
+    n8: 2124000 0x10B1C5: FindAndInsert(Node*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:193)
+     n0: 292000 0x10BC8D: main (main.cpp:54)
+     n0: 292000 0x10BD6E: main (main.cpp:56)
+     n0: 288000 0x10BDE0: main (main.cpp:57)
+     n0: 288000 0x10BEC4: main (main.cpp:59)
+     n0: 284000 0x10BBAF: main (main.cpp:52)
+     n0: 276000 0x10BC1E: main (main.cpp:53)
+     n0: 264000 0x10BCFC: main (main.cpp:55)
+     n0: 140000 0x10BE52: main (main.cpp:58)
+ n1: 73728 0x490E38E: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33)
+  n1: 73728 0x400571E: call_init.part.0 (dl-init.c:74)
+   n1: 73728 0x4005823: call_init (dl-init.c:120)
+    n1: 73728 0x4005823: _dl_init (dl-init.c:121)
+     n1: 73728 0x401F59F: ??? (in /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+      n1: 73728 0x1: ???
+       n1: 73728 0x1FFF00002E: ???
+        n0: 73728 0x1FFF00003A: ???
+ n0: 43609 in 7 places, all below massif's threshold (1.00%)
+ n1: 38232 0x10A66D: NewNode(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:16)
+  n1: 38232 0x10A93C: Insert(Node*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:63)
+   n1: 38232 0x10B1C5: FindAndInsert(Node*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:193)
+    n0: 38232 in 8 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=69
+#-----------
+time=2355952
+mem_heap_B=2304094
+mem_heap_extra_B=16818
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=70
+#-----------
+time=2355992
+mem_heap_B=2304125
+mem_heap_extra_B=16827
+mem_stacks_B=0
+heap_tree=detailed
+n4: 2304125 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 2148000 0x10B3A3: Node::Node() (AVL.hpp:6)
+  n1: 2148000 0x10A696: NewNode(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:16)
+   n1: 2148000 0x10A93C: Insert(Node*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:63)
+    n8: 2148000 0x10B1C5: FindAndInsert(Node*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:193)
+     n0: 296000 0x10BC8D: main (main.cpp:54)
+     n0: 296000 0x10BD6E: main (main.cpp:56)
+     n0: 292000 0x10BDE0: main (main.cpp:57)
+     n0: 292000 0x10BEC4: main (main.cpp:59)
+     n0: 288000 0x10BBAF: main (main.cpp:52)
+     n0: 280000 0x10BC1E: main (main.cpp:53)
+     n0: 264000 0x10BCFC: main (main.cpp:55)
+     n0: 140000 0x10BE52: main (main.cpp:58)
+ n1: 73728 0x490E38E: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33)
+  n1: 73728 0x400571E: call_init.part.0 (dl-init.c:74)
+   n1: 73728 0x4005823: call_init (dl-init.c:120)
+    n1: 73728 0x4005823: _dl_init (dl-init.c:121)
+     n1: 73728 0x401F59F: ??? (in /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+      n1: 73728 0x1: ???
+       n1: 73728 0x1FFF00002E: ???
+        n0: 73728 0x1FFF00003A: ???
+ n0: 43733 in 7 places, all below massif's threshold (1.00%)
+ n1: 38664 0x10A66D: NewNode(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:16)
+  n1: 38664 0x10A93C: Insert(Node*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:63)
+   n1: 38664 0x10B1C5: FindAndInsert(Node*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:193)
+    n0: 38664 in 8 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=71
+#-----------
+time=2381104
+mem_heap_B=2328610
+mem_heap_extra_B=16974
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=72
+#-----------
+time=2385320
+mem_heap_B=2332753
+mem_heap_extra_B=17047
+mem_stacks_B=0
+heap_tree=detailed
+n4: 2332753 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 2176000 0x10B3A3: Node::Node() (AVL.hpp:6)
+  n1: 2176000 0x10A696: NewNode(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:16)
+   n1: 2176000 0x10A93C: Insert(Node*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:63)
+    n8: 2176000 0x10B1C5: FindAndInsert(Node*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:193)
+     n0: 300000 0x10BC8D: main (main.cpp:54)
+     n0: 300000 0x10BD6E: main (main.cpp:56)
+     n0: 296000 0x10BDE0: main (main.cpp:57)
+     n0: 296000 0x10BEC4: main (main.cpp:59)
+     n0: 292000 0x10BBAF: main (main.cpp:52)
+     n0: 284000 0x10BC1E: main (main.cpp:53)
+     n0: 268000 0x10BCFC: main (main.cpp:55)
+     n0: 140000 0x10BE52: main (main.cpp:58)
+ n1: 73728 0x490E38E: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33)
+  n1: 73728 0x400571E: call_init.part.0 (dl-init.c:74)
+   n1: 73728 0x4005823: call_init (dl-init.c:120)
+    n1: 73728 0x4005823: _dl_init (dl-init.c:121)
+     n1: 73728 0x401F59F: ??? (in /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+      n1: 73728 0x1: ???
+       n1: 73728 0x1FFF00002E: ???
+        n0: 73728 0x1FFF00003A: ???
+ n0: 43857 in 7 places, all below massif's threshold (1.00%)
+ n1: 39168 0x10A66D: NewNode(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:16)
+  n1: 39168 0x10A93C: Insert(Node*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:63)
+   n1: 39168 0x10B1C5: FindAndInsert(Node*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:193)
+    n0: 39168 in 8 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=73
+#-----------
+time=2410432
+mem_heap_B=2357238
+mem_heap_extra_B=17194
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=74
+#-----------
+time=2414648
+mem_heap_B=2361381
+mem_heap_extra_B=17267
+mem_stacks_B=0
+heap_tree=detailed
+n4: 2361381 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 2204000 0x10B3A3: Node::Node() (AVL.hpp:6)
+  n1: 2204000 0x10A696: NewNode(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:16)
+   n1: 2204000 0x10A93C: Insert(Node*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:63)
+    n8: 2204000 0x10B1C5: FindAndInsert(Node*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:193)
+     n0: 304000 0x10BC8D: main (main.cpp:54)
+     n0: 304000 0x10BD6E: main (main.cpp:56)
+     n0: 300000 0x10BDE0: main (main.cpp:57)
+     n0: 300000 0x10BEC4: main (main.cpp:59)
+     n0: 296000 0x10BBAF: main (main.cpp:52)
+     n0: 288000 0x10BC1E: main (main.cpp:53)
+     n0: 268000 0x10BCFC: main (main.cpp:55)
+     n0: 144000 0x10BE52: main (main.cpp:58)
+ n1: 73728 0x490E38E: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33)
+  n1: 73728 0x400571E: call_init.part.0 (dl-init.c:74)
+   n1: 73728 0x4005823: call_init (dl-init.c:120)
+    n1: 73728 0x4005823: _dl_init (dl-init.c:121)
+     n1: 73728 0x401F59F: ??? (in /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+      n1: 73728 0x1: ???
+       n1: 73728 0x1FFF00002E: ???
+        n0: 73728 0x1FFF00003A: ???
+ n0: 43981 in 7 places, all below massif's threshold (1.00%)
+ n1: 39672 0x10A66D: NewNode(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:16)
+  n1: 39672 0x10A93C: Insert(Node*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:63)
+   n1: 39672 0x10B1C5: FindAndInsert(Node*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:193)
+    n0: 39672 in 8 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=75
+#-----------
+time=2439808
+mem_heap_B=2385918
+mem_heap_extra_B=17410
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=76
+#-----------
+time=2448072
+mem_heap_B=2394081
+mem_heap_extra_B=17511
+mem_stacks_B=0
+heap_tree=detailed
+n4: 2394081 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 2236000 0x10B3A3: Node::Node() (AVL.hpp:6)
+  n1: 2236000 0x10A696: NewNode(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:16)
+   n1: 2236000 0x10A93C: Insert(Node*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:63)
+    n8: 2236000 0x10B1C5: FindAndInsert(Node*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:193)
+     n0: 308000 0x10BC8D: main (main.cpp:54)
+     n0: 308000 0x10BD6E: main (main.cpp:56)
+     n0: 304000 0x10BDE0: main (main.cpp:57)
+     n0: 304000 0x10BEC4: main (main.cpp:59)
+     n0: 300000 0x10BBAF: main (main.cpp:52)
+     n0: 292000 0x10BC1E: main (main.cpp:53)
+     n0: 272000 0x10BCFC: main (main.cpp:55)
+     n0: 148000 0x10BE52: main (main.cpp:58)
+ n1: 73728 0x490E38E: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33)
+  n1: 73728 0x400571E: call_init.part.0 (dl-init.c:74)
+   n1: 73728 0x4005823: call_init (dl-init.c:120)
+    n1: 73728 0x4005823: _dl_init (dl-init.c:121)
+     n1: 73728 0x401F59F: ??? (in /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+      n1: 73728 0x1: ???
+       n1: 73728 0x1FFF00002E: ???
+        n0: 73728 0x1FFF00003A: ???
+ n0: 44105 in 7 places, all below massif's threshold (1.00%)
+ n1: 40248 0x10A66D: NewNode(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:16)
+  n1: 40248 0x10A93C: Insert(Node*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:63)
+   n1: 40248 0x10B1C5: FindAndInsert(Node*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:193)
+    n0: 40248 in 8 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=77
+#-----------
+time=2473184
+mem_heap_B=2418566
+mem_heap_extra_B=17658
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=78
+#-----------
+time=2477400
+mem_heap_B=2422709
+mem_heap_extra_B=17731
+mem_stacks_B=0
+heap_tree=detailed
+n4: 2422709 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 2264000 0x10B3A3: Node::Node() (AVL.hpp:6)
+  n1: 2264000 0x10A696: NewNode(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:16)
+   n1: 2264000 0x10A93C: Insert(Node*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:63)
+    n8: 2264000 0x10B1C5: FindAndInsert(Node*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:193)
+     n0: 312000 0x10BC8D: main (main.cpp:54)
+     n0: 312000 0x10BD6E: main (main.cpp:56)
+     n0: 308000 0x10BDE0: main (main.cpp:57)
+     n0: 308000 0x10BEC4: main (main.cpp:59)
+     n0: 304000 0x10BBAF: main (main.cpp:52)
+     n0: 296000 0x10BC1E: main (main.cpp:53)
+     n0: 276000 0x10BCFC: main (main.cpp:55)
+     n0: 148000 0x10BE52: main (main.cpp:58)
+ n1: 73728 0x490E38E: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33)
+  n1: 73728 0x400571E: call_init.part.0 (dl-init.c:74)
+   n1: 73728 0x4005823: call_init (dl-init.c:120)
+    n1: 73728 0x4005823: _dl_init (dl-init.c:121)
+     n1: 73728 0x401F59F: ??? (in /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+      n1: 73728 0x1: ???
+       n1: 73728 0x1FFF00002E: ???
+        n0: 73728 0x1FFF00003A: ???
+ n0: 44229 in 7 places, all below massif's threshold (1.00%)
+ n1: 40752 0x10A66D: NewNode(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:16)
+  n1: 40752 0x10A93C: Insert(Node*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:63)
+   n1: 40752 0x10B1C5: FindAndInsert(Node*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:193)
+    n0: 40752 in 8 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=79
+#-----------
+time=2502512
+mem_heap_B=2447194
+mem_heap_extra_B=17878
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=80
+#-----------
+time=2506728
+mem_heap_B=2451337
+mem_heap_extra_B=17951
+mem_stacks_B=0
+heap_tree=detailed
+n4: 2451337 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 2292000 0x10B3A3: Node::Node() (AVL.hpp:6)
+  n1: 2292000 0x10A696: NewNode(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:16)
+   n1: 2292000 0x10A93C: Insert(Node*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:63)
+    n8: 2292000 0x10B1C5: FindAndInsert(Node*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:193)
+     n0: 316000 0x10BC8D: main (main.cpp:54)
+     n0: 316000 0x10BD6E: main (main.cpp:56)
+     n0: 312000 0x10BDE0: main (main.cpp:57)
+     n0: 312000 0x10BEC4: main (main.cpp:59)
+     n0: 308000 0x10BBAF: main (main.cpp:52)
+     n0: 300000 0x10BC1E: main (main.cpp:53)
+     n0: 280000 0x10BCFC: main (main.cpp:55)
+     n0: 148000 0x10BE52: main (main.cpp:58)
+ n1: 73728 0x490E38E: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33)
+  n1: 73728 0x400571E: call_init.part.0 (dl-init.c:74)
+   n1: 73728 0x4005823: call_init (dl-init.c:120)
+    n1: 73728 0x4005823: _dl_init (dl-init.c:121)
+     n1: 73728 0x401F59F: ??? (in /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+      n1: 73728 0x1: ???
+       n1: 73728 0x1FFF00002E: ???
+        n0: 73728 0x1FFF00003A: ???
+ n0: 44353 in 7 places, all below massif's threshold (1.00%)
+ n1: 41256 0x10A66D: NewNode(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:16)
+  n1: 41256 0x10A93C: Insert(Node*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:63)
+   n1: 41256 0x10B1C5: FindAndInsert(Node*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:193)
+    n0: 41256 in 8 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=81
+#-----------
+time=2531888
+mem_heap_B=2475874
+mem_heap_extra_B=18094
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=82
+#-----------
+time=2540152
+mem_heap_B=2484037
+mem_heap_extra_B=18195
+mem_stacks_B=0
+heap_tree=peak
+n4: 2484037 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 2324000 0x10B3A3: Node::Node() (AVL.hpp:6)
+  n1: 2324000 0x10A696: NewNode(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:16)
+   n1: 2324000 0x10A93C: Insert(Node*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:63)
+    n8: 2324000 0x10B1C5: FindAndInsert(Node*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:193)
+     n0: 320000 0x10BC8D: main (main.cpp:54)
+     n0: 320000 0x10BD6E: main (main.cpp:56)
+     n0: 316000 0x10BDE0: main (main.cpp:57)
+     n0: 316000 0x10BEC4: main (main.cpp:59)
+     n0: 312000 0x10BBAF: main (main.cpp:52)
+     n0: 304000 0x10BC1E: main (main.cpp:53)
+     n0: 284000 0x10BCFC: main (main.cpp:55)
+     n0: 152000 0x10BE52: main (main.cpp:58)
+ n1: 73728 0x490E38E: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33)
+  n1: 73728 0x400571E: call_init.part.0 (dl-init.c:74)
+   n1: 73728 0x4005823: call_init (dl-init.c:120)
+    n1: 73728 0x4005823: _dl_init (dl-init.c:121)
+     n1: 73728 0x401F59F: ??? (in /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+      n1: 73728 0x1: ???
+       n1: 73728 0x1FFF00002E: ???
+        n0: 73728 0x1FFF00003A: ???
+ n0: 44477 in 7 places, all below massif's threshold (1.00%)
+ n1: 41832 0x10A66D: NewNode(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:16)
+  n1: 41832 0x10A93C: Insert(Node*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:63)
+   n1: 41832 0x10B1C5: FindAndInsert(Node*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int) (AVL.cpp:193)
+    n0: 41832 in 8 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=83
+#-----------
+time=2565272
+mem_heap_B=2485142
+mem_heap_extra_B=16866
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=84
+#-----------
+time=2590976
+mem_heap_B=2460832
+mem_heap_extra_B=15472
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=85
+#-----------
+time=2665496
+mem_heap_B=2386466
+mem_heap_extra_B=15318
+mem_stacks_B=0
+heap_tree=empty

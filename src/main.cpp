@@ -6,12 +6,16 @@
 
 using namespace std;
 
-string TimeToString(tm time){
-    char buffer[30];
-
-    strftime(buffer, sizeof(buffer), "%Y-%m-%dT%H:%M:%S", &time);
-
-    return string(buffer);
+void parse_args(int argc,char *argv[]){
+    //argc deve receber o nome do arquivo xcvs
+    if(argc < 2){
+        cout << "Faltam argumentos" << endl;
+        exit(1);
+    }
+    if(argc > 2){
+        cout << "Argumentos a mais" << endl;
+        exit(1);
+    }
 }
 
 double StringToSeconds(string const &time_str){
@@ -29,10 +33,12 @@ double StringToSeconds(string const &time_str){
 
 int main(int argc, char *argv[]){
 
+    parse_args(argc, argv);
+
     int num_flights;
     Flight *flights;
 
-    //mudar a forma como as arvores sao criadas/iniciadas
+    //cria as arvores dos criterios de ordenacao
     Node *org = nullptr, *dst = nullptr, *prc = nullptr;
     Node *sea = nullptr, *dep = nullptr, *arr = nullptr;
     Node *sto = nullptr, *dur = nullptr;
@@ -66,13 +72,15 @@ int main(int argc, char *argv[]){
             sto = FindAndInsert(sto, flights[index].number_stops, index);
             dur = FindAndInsert(dur, flights[index].duration, index);
             
-            //cout << flights[index].origin << " " << flights[index].destination << " " << flights[index].price << " " << flights[index].seats << " " << flights[index].departure_time << " " << flights[index].arrival_time << " " << flights[index].number_stops << " " << flights[index].departure_time_seconds << " " << flights[index].arrival_time_seconds << " " << flights[index].duration << endl;
+            cout << flights[index].origin << " " << flights[index].destination << " " << flights[index].price << " " << flights[index].seats << " " << flights[index].departure_time << " " << flights[index].arrival_time << " " << flights[index].number_stops << " " << flights[index].departure_time_seconds << " " << flights[index].arrival_time_seconds << " " << flights[index].duration << endl;
         }
     } catch (exception &e){
         cout << "Erro ao coletar os dados dos voos!" << endl;
         cerr << e.what() << endl;
         exit(1);
     }
+
+    PostOrder(org);
 
     file.close();
 

@@ -1,7 +1,7 @@
 #ifndef AVL_HPP
 #define AVL_HPP
 
-#define MAX_VOOS 1000
+#define MAX_VOOS 200
 
 typedef struct Node
 {
