@@ -33,14 +33,10 @@ int main(int argc, char *argv[]){
     Flight *flights;
 
     //mudar a forma como as arvores sao criadas/iniciadas
-    Node *org = nullptr;
-    Node *dst = nullptr;
-    Node *prc = nullptr;
-    Node *sea = nullptr;
-    Node *dep = nullptr;
-    Node *arr = nullptr;
-    Node *sto = nullptr;
-    Node *dur = nullptr;
+    Node *org = nullptr, *dst = nullptr, *prc = nullptr;
+    Node *sea = nullptr, *dep = nullptr, *arr = nullptr;
+    Node *sto = nullptr, *dur = nullptr;
+    
     ifstream file(argv[1]);
 
     if( !file.is_open() ){
