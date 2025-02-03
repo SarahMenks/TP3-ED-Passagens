@@ -5,33 +5,40 @@ int max(int a, int b) {
     return (a > b) ? a : b;
 }
 
-int AVL::GetHeight(AVL *N) {
+// void IndexSize(Node *node, int size){
+//     node->flight_index = new int[size];
+//     node->pos = 0;
+// }
+
+int GetHeight(Node *N) {
     if (N == nullptr)
         return 0;
     return N->height;
 }
 
-AVL* AVL::NewNode(int key) {
+Node *NewNode(std::string key, int index) {
     //cria uma folha de altura 1
-    AVL* node = new AVL();
+    Node* node = new Node();
+    node->flight_index[node->pos] = index;
+    node->pos++;
     node->key = key;
     node->left = nullptr;
-    node->right = nullptr;
+    node->right = nullptr; 
     node->height = 1; 
-    return(node);
+    return node;
 }
 
-int AVL::GetBalance(AVL *N) {
+int GetBalance(Node *N) {
     if (N == nullptr)
         return 0;
 
-    return (N->GetHeight(N->left) - N->GetHeight(N->right));
+    return (GetHeight(N->left) - GetHeight(N->right));
 }
 
 //Rotacao para direita
-AVL* AVL::RightRotate(AVL *y) {
-    AVL *x = y->left;
-    AVL *T2 = x->right;
+Node* RightRotate(Node *y) {
+    Node *x = y->left;
+    Node *T2 = x->right;
 
     x->right = y;
     y->left = T2;
@@ -43,9 +50,9 @@ AVL* AVL::RightRotate(AVL *y) {
 }
 
 //Rotacao para esquerda
-AVL* AVL::LeftRotate(AVL *x) {
-    AVL *y = x->right;
-    AVL *T2 = y->left;
+Node* LeftRotate(Node *x) {
+    Node *y = x->right;
+    Node *T2 = y->left;
 
     y->left = x;
     x->right = T2;
@@ -56,22 +63,23 @@ AVL* AVL::LeftRotate(AVL *x) {
     return y;
 }
 
-AVL* AVL::Insert(AVL* node, int key) {
-    if (node == nullptr)
-        return(NewNode(key));
+Node* Insert(Node* node, std::string key, int const index) {
+    if (node == nullptr){
+        node = NewNode(key, index); 
+        return node;
+    }
 
     //procura lugar para inserir
     if (key < node->key)
-        node->left = Insert(node->left, key);
+        node->left = Insert(node->left, key, index);
     else if (key > node->key)
-        node->right = Insert(node->right, key);
+        node->right = Insert(node->right, key, index);
     else 
         return node;
 
     node->height = 1 + max(GetHeight(node->left), GetHeight(node->right));
 
     int balance = GetBalance(node);
-
 
     //caso esquerda-esquerda
     if (balance > 1 && key < node->left->key)
@@ -96,7 +104,7 @@ AVL* AVL::Insert(AVL* node, int key) {
     return node;
 }
 
-AVL* AVL::DeleteNode(AVL* root, int key) {
+Node* DeleteNode(Node* root, std::string key) {
     if (root == nullptr)
         return root;
 
@@ -108,7 +116,7 @@ AVL* AVL::DeleteNode(AVL* root, int key) {
 
     else {
         if ((root->left == nullptr) || (root->right == nullptr)) {
-            AVL *temp = root->left ? root->left : root->right;
+            Node *temp = root->left ? root->left : root->right;
 
             //se nao tem filhos é nulo
             if (temp == nullptr) {
@@ -119,7 +127,7 @@ AVL* AVL::DeleteNode(AVL* root, int key) {
             delete(temp);
         } else {
             // se tem dois filhos, pega o sucessor
-            AVL* temp = root->right;
+            Node* temp = root->right;
             while (temp->left != nullptr)
                 temp = temp->left;
 
@@ -158,21 +166,41 @@ AVL* AVL::DeleteNode(AVL* root, int key) {
     return root;
 }
 
-AVL* AVL::FindKey(int key) {
-    //retorna o nó da chave correspondente 
-    AVL *current = this;
+int* FindKey(Node *root, std::string key) {
+    //retorna o vetor de indices da chave correspondente 
+    Node *current = root;
     while (current != nullptr) {
         if (key == current->key)
-            return current;
+            return current->flight_index;
         if (key < current->key)
             current = current->left;
         else
             current = current->right;
     }
-    return nullptr;
+    return nullptr; //se nao encontrar, retorna nulo
 }
 
-void AVL::PostOrder(AVL *root) {
+void FindAndInsert(Node *root, std::string key, int index){
+    //funcao para encontrar e inserir um voo
+    //se o voo ja existe, insere o indice no vetor de indices
+    Node *current = root;
+    while (current != nullptr) {
+        if (key == current->key){
+            current->flight_index[current->pos] = index;
+            current->pos++;
+            return;
+        }
+        if (key < current->key)
+            current = current->left;
+        else //current >= key
+            current = current->right;
+    }
+    root = Insert(nullptr, key, index); //as vozes da minha cabeça deram uma surtada aqui
+
+}
+
+
+void PostOrder(Node *root) {
     if (root != nullptr) {
         PostOrder(root->left);
         PostOrder(root->right);

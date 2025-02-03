@@ -31,8 +31,16 @@ int main(int argc, char *argv[]){
 
     int num_flights, num_operations;
     Flight *flights;
-    AVL *org, *dst, *prc, *sea, *dep, *arr, *sto, *dur;
-    
+
+    //mudar a forma como as arvores sao criadas/iniciadas
+    Node *org = nullptr;
+    Node *dst = nullptr;
+    Node *prc = nullptr;
+    Node *sea = nullptr;
+    Node *dep = nullptr;
+    Node *arr = nullptr;
+    Node *sto = nullptr;
+    Node *dur = nullptr;
     ifstream file(argv[1]);
 
     if( !file.is_open() ){
@@ -41,22 +49,41 @@ int main(int argc, char *argv[]){
     }
 
     //coleta os dados dos voos
-    file >> num_flights;
-    flights = new Flight[num_flights];
-    for(int i = 0; i < num_flights; i++){
-        file >> flights[i].origin >> flights[i].destination >> flights[i].price >> flights[i].seats >> flights[i].departure_time >> flights[i].arrival_time >> flights[i].number_stops;
-        flights[i].departure_time_seconds = StringToSeconds(flights[i].departure_time); //calcula o horario de partida em segundos
-        flights[i].arrival_time_seconds = StringToSeconds(flights[i].arrival_time); //calcula o horario de chegada em segundos
-        flights[i].duration = (flights[i].arrival_time_seconds - flights[i].departure_time_seconds); //calcula duração do voo
+    try{
+        file >> num_flights;
+        flights = new Flight[num_flights];
 
-        //cout << flights[i].origin << " " << flights[i].destination << " " << flights[i].price << " " << flights[i].seats << " " << flights[i].departure_time << " " << flights[i].arrival_time << " " << flights[i].number_stops << " " << flights[i].departure_time_seconds << " " << flights[i].arrival_time_seconds << " " << flights[i].duration << endl;
+        for(int index = 0; index < num_flights; index++){
+            //recebe os dados dos voos
+            file >> flights[index].origin >> flights[index].destination >> flights[index].price >> flights[index].seats >> flights[index].departure_time >> flights[index].arrival_time >> flights[index].number_stops;
+            flights[index].departure_time_seconds = StringToSeconds(flights[index].departure_time); //calcula o horario de partida em segundos
+            flights[index].arrival_time_seconds = StringToSeconds(flights[index].arrival_time); //calcula o horario de chegada em segundos
+            flights[index].duration = to_string(flights[index].arrival_time_seconds - flights[index].departure_time_seconds); //calcula duração do voo
+
+            //insere os dados nas arvores
+            FindAndInsert(org, flights[index].origin, index);
+            FindAndInsert(dst, flights[index].destination, index);
+            FindAndInsert(prc, flights[index].price, index);
+            FindAndInsert(sea, flights[index].seats, index);
+            FindAndInsert(dep, flights[index].departure_time, index);
+            FindAndInsert(arr, flights[index].arrival_time, index);
+            FindAndInsert(sto, flights[index].number_stops, index);
+            FindAndInsert(dur, flights[index].duration, index);
+            
+            cout << flights[index].origin << " " << flights[index].destination << " " << flights[index].price << " " << flights[index].seats << " " << flights[index].departure_time << " " << flights[index].arrival_time << " " << flights[index].number_stops << " " << flights[index].departure_time_seconds << " " << flights[index].arrival_time_seconds << " " << flights[index].duration << endl;
+        }
+    } catch (exception &e){
+        cout << "Erro ao coletar os dados dos voos!" << endl;
+        cerr << e.what() << endl;
+        exit(1);
     }
     
-    //coleta as operações
-    file >> num_operations;
-    for(int i = 0; i < num_operations; i++){
-        char *ptr;
-    }
+
+    // //coleta as operações
+    // file >> num_operations;
+    // for(int i = 0; i < num_operations; i++){
+    //     char *ptr;
+    // }
         /*
         //inicializa variaveis aleatorias que vao ajudar na leitura do arquivo
         int numPessoa = 0;
@@ -74,6 +101,18 @@ int main(int argc, char *argv[]){
             }
             p[numPessoa].nome = caracteristica;
         */
+
+    file.close();
+
+    delete [] flights;
+    delete org;
+    delete dst;
+    delete prc;
+    delete sea;
+    delete dep;
+    delete arr;
+    delete sto;
+    delete dur;
 
     return 0;
 }
